@@ -4,10 +4,20 @@
 
 $green : #219f07;
 
+@font-face {
+    font-family: "South Park";
+    src: url(font/sp.woff);
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(font/bn.otf);
+}
+
 html, body {
 	margin: 0;
 	padding: 0px;
 	overflow-x: hidden;
+	font-family: "Helvetica";
 }
 
 h1, h2 {
@@ -34,6 +44,10 @@ $browser-context: 16; // Default
 /*
 *	GENERAL
 */
+.block {
+	display: block;
+	margin: 0 auto;
+}
 
 #navigation {
 	background: $green;
@@ -186,6 +200,17 @@ a {
     .swiper-container {
 		width: 100%;
 		height: 80%;
+	}
+
+	.swiper-slide {
+		position: relative;
+	}
+
+	.button_red {
+		position: absolute;
+		z-index: 3;
+		bottom: 35px;
+		right: 60px;
 	}
 
 	.arrow-left, .arrow-right {
@@ -371,6 +396,64 @@ a {
 		img {
 			width: 100%;
 		}
+	}
+}
+
+/*
+*	CONTACT
+*/
+
+$width_contact : 700px;
+
+#contact {
+	h2 {
+		text-align: center;
+	}
+}
+
+form {
+	width: $width_contact;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	.style_input {
+		margin: 10px 0;
+
+		&.style_radio {
+			input {
+				margin-top: 15px;
+				margin-left: 15px;
+			}
+		}
+
+		label {
+			display:block;
+			font-size: em(20);
+			margin: 5px 0;
+		}
+
+		input[type=text], textarea {
+			width: $width_contact;
+			border: solid 1px $green;
+			box-shadow: none;
+			padding: 12px 12px 12px 8px;
+			font-size: em(18);
+			resize: none;
+			@include box-sizing(border-box);
+		}
+
+		textarea {
+			height: 180px;
+		}
+	}
+}
+
+.div_letter {
+	width: $width_contact;
+
+	img {
+		width: 100%;
 	}
 }
 
