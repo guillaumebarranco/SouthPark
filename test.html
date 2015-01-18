@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Mon premier rendu 3D avec Three.js</title>
+    <meta charset="utf-8">
+    <link  href="css/main.css" rel="stylesheet"/>
+  </head>
+<body style="background: black;">
+  <h1 id="msg" style="position:absolute; color: white; z-index: -1;top: 22%;left: 37%;"></h1>
+  <h1 id="msg2" style="position:absolute; color: white; z-index: -1;top: 26%;left: 37%;"></h1>
+  <h1 id="msg3" style="position:absolute; color: white; z-index: -1;top: 30%;left: 37%;"></h1>
+  <h1 id="msg4" style="position:absolute; color: white; z-index: -1;top: 34%;left: 37%;"></h1>
+  <h1 id="msg5" style="position:absolute; color: white; font-size: 80px;z-index: -1;top: 38%;left: 37%;"></h1>
+    
+  <div id="container"></div>
+  
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="http://mrdoob.github.com/three.js/build/three.min.js"></script>
+
+  <script>
+
+    var renderer, scene, camera, mesh;
+    init();
+    animate();
+
+    function init() {
+      renderer = new THREE.WebGLRenderer();
+
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      console.log(renderer.domElement);
+
+      $('#container').append(renderer.domElement);
+
+      scene = new THREE.Scene();
+
+      camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 1, 10000);
+      camera.position.set(0,0,1000);
+      scene.add(camera);
+
+      var geometry = new THREE.SphereGeometry(150,10,30);
+      var material = new THREE.MeshBasicMaterial( {
+        color: 0xff000,
+        wireframe: true
+      });
+      mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
+      console.log(mesh);
+      mesh.scale.x = 0.001;
+      mesh.scale.y = 0.001;
+      mesh.scale.z = 0.001;
+
+
+      renderer.render(scene, camera);
+    }
+    function animate() {
+
+      if(mesh.scale.x < 1 && mesh.scale.x > 0) {
+        requestAnimationFrame(animate);
+        mesh.rotation.x += 0.01;
+        mesh.rotation.y = 0.02;
+        mesh.scale.x += 0.005;
+        mesh.scale.y += 0.005;
+        mesh.scale.z += 0.005;
+      } else if (mesh.scale.x < 100 && mesh.scale.x > 1) {
+        requestAnimationFrame(animate);
+        mesh.rotation.x += 0.01;
+        mesh.rotation.y = 0.02;
+        mesh.scale.x += 0.5;
+        mesh.scale.y += 0.5;
+        mesh.scale.z += 0.5;
+      } else {
+        $('canvas').remove();
+        window.koko2 = 0;
+        var zz = 0;
+        if(zz === 0) {
+          zz = 1;
+          showText("#msg", "Bienvenue dans la warp zone", 0, 100); 
+        }
+        
+        /*mesh.rotation.x += 0.01;
+        mesh.rotation.y = 0.02;
+        mesh.scale.x += 0.5;
+        mesh.scale.y += 0.5;
+        mesh.scale.z += 0.5;*/
+      }
+      
+      renderer.render(scene, camera);
+    }
+
+    function koko() {
+      alert('ko');
+    }
+
+    var showText = function (target, message, index, interval) {   
+      if (index < message.length) {
+        $(target).append(message[index++]);
+        setTimeout(function () { showText(target, message, index, interval); }, interval);
+      } else {
+        if(window.koko2 === 0) {
+          window.koko2 = 1;
+          showText("#msg2", "Tout ce que vous direz pourra etre retenu contre vous", 0, 100); 
+        } else if(window.koko2 === 1) {
+          window.koko2 = 2;
+          showText("#msg3", "Vous avez le droit à un avocat", 0, 100); 
+        } else if(window.koko2 === 2) {
+          window.koko2 = 3;
+          showText("#msg4", "Mais vous avez interdiction de le manger.", 0, 100); 
+        } else if(window.koko2 === 3) {
+          window.koko2 = 4;
+          showText("#msg5", "BOUYAKASHA", 0, 100); 
+        }
+       
+      }
+    }
+  </script>
+
+</body>
+</html>

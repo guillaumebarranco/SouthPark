@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+
+		<header>
+			<nav id="navigation">
+
+				<div class="bandeau_top">
+					<a href="index.html" id="logo"></a>
+					<div class="traits">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+					
+				<ul class="menu">
+					<li>
+						<a href="index.html" class="link_home">Accueil</a>
+					</li>
+					<li>
+						<a href="blindtest.html" class="link_blindtest">Blindtest</a>
+					</li>
+					<li>
+						<a href="gallery.html" class="link_gallery">Galerie</a>
+					</li>
+					<li>
+						<a href="calendar.html" class="link_calendar">Calendrier</a>
+					</li>
+					<li>
+						<a href="contact.html" class="link_contact">Contact</a>
+					</li>
+				</ul>
+
+				<ul class="menu_mobile">
+					<li>
+						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="blindtest.html">Blindtest</a>
+					</li>
+					<li>
+						<a href="gallery.html">Gallerie</a>
+					</li>
+					<li>
+						<a href="calendar.html">Calendrier</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+
+			<section id="gallery">
+				<h1>South Park : Galerie</h1>
+
+				<select name="filter">
+					<option value="all">Tous</option>
+					<option value="comic">Style Comics</option>
+					<option value="cartman">Cartman</option>
+					<option value="episode">Episodes</option>
+					<option value="group">Groupe</option>
+					<option value="unclassifiable">Inclassable</option>
+				</select>
+
+				<select name="sort">
+					<option value="none">Aucun</option>
+					<option value="nb_persos">Nombre de personnages</option>
+				</select>
+
+				<ul class="gallery">
+					<li class="picture_gallery" data-filter="episode" data-sortperso="5">
+						<img src="img/1920X1200/chinaproblem.jpg" alt="Le problème chinois" />
+					</li>
+					<li class="picture_gallery" data-filter="group" data-sortperso="8">
+						<img src="img/1920X1200/coonfriends.jpg" alt="Le Coon et sa bande" />
+					</li>
+					<li class="picture_gallery" data-filter="cartman" data-sortperso="1">
+						<img src="img/1920X1200/dog.jpg" alt="The big bad dog" />
+					</li>
+					<li class="picture_gallery" data-filter="cartman" data-sortperso="2">
+						<img src="img/1920X1200/genialo.jpg" alt="Genial-O" />
+					</li>
+					<li class="picture_gallery" data-filter="episode" data-sortperso="40">
+						<img src="img/1920X1200/jerseything.jpg" alt="Un truc New-Jersien" />
+					</li>
+
+
+					<li class="picture_gallery" data-filter="cartman" data-sortperso="1">
+						<img src="img/1920X1200/mountain.jpg" alt="Cartman sur une montagne" />
+					</li>
+					<li class="picture_gallery" data-filter="comic" data-sortperso="3">
+						<img src="img/1920X1200/mysterion.jpg" alt="Mystérion" />
+					</li>
+					<li class="picture_gallery" data-filter="group" data-sortperso="12">
+						<img src="img/1920X1200/painting.jpg" alt="Peinture de la Cène avec les personnages de South Park" />
+					</li>
+					<li class="picture_gallery" data-filter="episode" data-sortperso="5">
+						<img src="img/1920X1200/pandemic.jpg" alt="Pandémie" />
+					</li>
+					<li class="picture_gallery" data-filter="group" data-sortperso="5">
+						<img src="img/1920X1200/stickoftruth.jpg" alt="Le Bâton de la Vérité" />
+					</li>
+
+
+					<li class="picture_gallery" data-filter="episode" data-sortperso="7">
+						<img src="img/1920X1200/superbestfriends.jpg" alt="Les super meilleurs potes" />
+					</li>
+					<li class="picture_gallery" data-filter="unclassifiable" data-sortperso="2">
+						<img src="img/1920X1200/terrencephillipe.jpg" alt="Terrence et Philippe" />
+					</li>
+				</ul>
+			</section>
+			
+		</div>
+
+		<footer>
+			<div class="txt_footer">
+				<a href="#">Mentions Légales</a>
+				<span> - </span>
+				<a href="#">Copyright</a>
+			</div>
+			<ul class="socials">
+				<li>
+					<a href="#">
+						<i class="fi-social-facebook"></i>
+					</a>
+				</li>
+				<li class="separator"></li>
+				<li>
+					<a href="#">
+						<i class="fi-social-twitter"></i>
+					</a>
+				</li>
+			</ul>
+		</footer>
+			
+		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

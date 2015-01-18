@@ -1,0 +1,652 @@
+/* line 7, ../sass/main.scss */
+html, body {
+  margin: 0;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+/* line 13, ../sass/main.scss */
+h1, h2 {
+  font-family: "South Park";
+  color: #000;
+}
+
+/*
+*	GENERAL
+*/
+/* line 38, ../sass/main.scss */
+#navigation {
+  background: #1fb22c;
+  height: auto;
+  position: relative;
+}
+/* line 43, ../sass/main.scss */
+#navigation .bandeau_top {
+  height: 4.5em;
+}
+/* line 46, ../sass/main.scss */
+#navigation .bandeau_top #logo {
+  display: block;
+  width: 40px;
+  height: 42px;
+  background-image: url("../img/logo_mini.png");
+  background-repeat: no-repeat;
+  float: left;
+  margin: 10px 0 0 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 57, ../sass/main.scss */
+#navigation .bandeau_top .traits {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  padding: 20px;
+  top: -10px;
+  right: 0px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 66, ../sass/main.scss */
+#navigation .bandeau_top .traits span {
+  width: 29px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  margin-top: 8px;
+}
+/* line 76, ../sass/main.scss */
+#navigation .menu_mobile {
+  height: 230px;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 82, ../sass/main.scss */
+#navigation .menu_mobile li {
+  list-style: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* line 87, ../sass/main.scss */
+#navigation .menu_mobile li a {
+  padding: 13px 0px;
+  width: 100%;
+  display: block;
+  border-top: solid 1px black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 96, ../sass/main.scss */
+#navigation .menu_mobile li a:hover {
+  background-color: #14711c;
+}
+/* line 102, ../sass/main.scss */
+#navigation .menu_mobile li:last-child a {
+  padding: 16px 0px;
+}
+
+/* line 110, ../sass/main.scss */
+.menu {
+  display: none;
+}
+
+/* line 115, ../sass/main.scss */
+#container h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* line 123, ../sass/main.scss */
+.button_red {
+  background-color: #e64d3c;
+  height: 50px;
+  width: 275px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Bebas Neue";
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  border: none;
+  font-size: 1.6875em;
+  border: solid 1px #e64d3c;
+}
+/* line 140, ../sass/main.scss */
+.button_red div {
+  float: left;
+  background-color: #d42e1b;
+  width: 35px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* line 149, ../sass/main.scss */
+.button_red div span {
+  background-image: url("../img/fleche_button.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 12px;
+  height: 23px;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+/* line 161, ../sass/main.scss */
+.button_red:hover {
+  background: white;
+  color: #d42e1b;
+}
+
+/* line 168, ../sass/main.scss */
+a.button_red {
+  height: 35px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 0px;
+}
+
+/*
+*	HOME
+*/
+/* line 180, ../sass/main.scss */
+.device {
+  width: 100%;
+  margin: 5px auto;
+  position: relative;
+  height: 250px;
+}
+/* line 186, ../sass/main.scss */
+.device .swiper-container {
+  width: 100%;
+  height: 80%;
+}
+/* line 191, ../sass/main.scss */
+.device .arrow-left, .device .arrow-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  width: 17px;
+  height: 30px;
+  z-index: 2;
+  display: none;
+}
+/* line 201, ../sass/main.scss */
+.device .arrow-left {
+  background: url(../img/arrows.png) no-repeat left top;
+  left: 10px;
+}
+/* line 205, ../sass/main.scss */
+.device .arrow-right {
+  background: url(../img/arrows.png) no-repeat left bottom;
+  right: 10px;
+}
+
+/* line 211, ../sass/main.scss */
+.title {
+  font-size: 1.5625em;
+  margin-bottom: 10px;
+}
+
+/* line 215, ../sass/main.scss */
+.pagination {
+  position: absolute;
+  left: 0;
+  text-align: center;
+  bottom: 5px;
+  width: 100%;
+}
+
+/* line 223, ../sass/main.scss */
+.swiper-pagination-switch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background: white;
+  border: solid 1px #24ae5f;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+
+/* line 233, ../sass/main.scss */
+.swiper-active-switch {
+  background: #24ae5f;
+}
+
+/* line 237, ../sass/main.scss */
+.img_head {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/* line 240, ../sass/main.scss */
+.img_head img {
+  width: 100%;
+}
+
+/* line 246, ../sass/main.scss */
+.persos .choose_perso {
+  display: none;
+}
+
+/* line 251, ../sass/main.scss */
+.bg {
+  padding: 20px;
+}
+/* line 253, ../sass/main.scss */
+.bg h2 {
+  text-align: center;
+}
+/* line 258, ../sass/main.scss */
+.bg.bg_perso h3 {
+  text-transform: uppercase;
+}
+/* line 262, ../sass/main.scss */
+.bg.bg_perso ul li {
+  list-style: none;
+}
+/* line 268, ../sass/main.scss */
+.bg .bg_picture {
+  text-align: center;
+}
+/* line 270, ../sass/main.scss */
+.bg .bg_picture img {
+  height: 220px;
+}
+/* line 275, ../sass/main.scss */
+.bg.bg_yellow {
+  background: #f1dc0d;
+}
+/* line 278, ../sass/main.scss */
+.bg.bg_yellow .yellow_picture {
+  float: left;
+  margin: 10px;
+}
+/* line 283, ../sass/main.scss */
+.bg.bg_bluesky {
+  background-color: #8be4e3;
+}
+/* line 286, ../sass/main.scss */
+.bg.bg_blue {
+  background-color: #4a6398;
+}
+/* line 289, ../sass/main.scss */
+.bg.bg_red {
+  background-color: #c50a36;
+}
+/* line 292, ../sass/main.scss */
+.bg.bg_green {
+  background-color: #1fb22c;
+}
+/* line 295, ../sass/main.scss */
+.bg.bg_orange {
+  background-color: #da5a00;
+}
+
+/* line 300, ../sass/main.scss */
+.blindtest {
+  display: block;
+}
+
+/*
+*	BLINDTEST
+*/
+/* line 308, ../sass/main.scss */
+.picture_blindtest {
+  width: 500px;
+  margin: 0 auto;
+}
+/* line 312, ../sass/main.scss */
+.picture_blindtest img {
+  width: 100%;
+}
+
+/* line 317, ../sass/main.scss */
+.launch_blindtest {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* line 323, ../sass/main.scss */
+.block_blindtest {
+  display: none;
+  margin: 50px 0px;
+}
+/* line 327, ../sass/main.scss */
+.block_blindtest li {
+  list-style: none;
+  display: none;
+}
+/* line 331, ../sass/main.scss */
+.block_blindtest li button {
+  font-family: "Bebas Neue";
+  display: block;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: #a58680;
+  padding: 20px 0px;
+  width: 270px;
+  color: white;
+  border: solid 1px #a58680;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 1.375em;
+  box-sizing: border-box;
+  height: 69px;
+}
+/* line 346, ../sass/main.scss */
+.block_blindtest li button:hover {
+  font-size: 1.625em;
+}
+
+/* line 353, ../sass/main.scss */
+.what_answer {
+  position: absolute;
+  top: 500px;
+  left: 710px;
+}
+
+/*
+*	GALLERY
+*/
+/* line 363, ../sass/main.scss */
+.gallery {
+  padding: 0;
+}
+/* line 366, ../sass/main.scss */
+.gallery li {
+  width: 310px;
+  display: inline-block;
+  -moz-transition: 0.6s;
+  -o-transition: 0.6s;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+/* line 371, ../sass/main.scss */
+.gallery li img {
+  width: 100%;
+}
+
+/*
+*	FOOTER
+*/
+/* line 381, ../sass/main.scss */
+footer {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  font-family: "Quicksand";
+}
+/* line 388, ../sass/main.scss */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+/* line 392, ../sass/main.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+/* line 397, ../sass/main.scss */
+footer ul {
+  margin: 0;
+}
+/* line 399, ../sass/main.scss */
+footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+/* line 404, ../sass/main.scss */
+footer ul li.separator {
+  width: 20px;
+}
+/* line 408, ../sass/main.scss */
+footer ul li i {
+  font-size: 2.5em;
+}
+
+@media screen and (min-width: 640px) {
+  /* line 417, ../sass/main.scss */
+  .bg.bg_perso {
+    /*.bg_picture {
+    	img {
+    		@include rotate(-15deg);
+    	}
+    }*/
+  }
+  /* line 419, ../sass/main.scss */
+  .bg.bg_perso .tastes {
+    margin: 0 auto;
+    width: 310px;
+  }
+  /* line 423, ../sass/main.scss */
+  .bg.bg_perso .tastes .like, .bg.bg_perso .tastes .dislike {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+  }
+  /* line 428, ../sass/main.scss */
+  .bg.bg_perso .tastes .like ul, .bg.bg_perso .tastes .dislike ul {
+    padding: 0;
+  }
+  /* line 434, ../sass/main.scss */
+  .bg.bg_perso .bg_picture, .bg.bg_perso .text_perso {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    position: relative;
+    top: -20px;
+  }
+  /* line 448, ../sass/main.scss */
+  .bg.bg_perso:nth-child(even) .text_perso {
+    left: -300px;
+    text-align: right;
+  }
+  /* line 452, ../sass/main.scss */
+  .bg.bg_perso:nth-child(even) .bg_picture {
+    left: 300px;
+    /*img {
+    	@include rotate(15deg);
+    }*/
+  }
+
+  /* line 465, ../sass/main.scss */
+  .device .swiper-container {
+    height: 90%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 472, ../sass/main.scss */
+  .menu {
+    padding: 0;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 14px;
+    font-family: "South Park";
+    font-size: 1.6875em;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -15px;
+  }
+  /* line 484, ../sass/main.scss */
+  .menu li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  /* line 489, ../sass/main.scss */
+  .menu li a {
+    width: 100%;
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+  /* line 495, ../sass/main.scss */
+  .menu li a.link_active {
+    color: black;
+  }
+  /* line 499, ../sass/main.scss */
+  .menu li a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* line 506, ../sass/main.scss */
+  .menu_mobile, .traits {
+    display: none;
+  }
+
+  /* line 514, ../sass/main.scss */
+  #navigation .bandeau_top #logo {
+    background-image: url("../img/logo2.png");
+    width: 90px;
+    height: 93px;
+  }
+
+  /* line 522, ../sass/main.scss */
+  #container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  /* line 527, ../sass/main.scss */
+  .device {
+    height: 600px;
+  }
+  /* line 529, ../sass/main.scss */
+  .device .arrow-left, .device .arrow-right {
+    display: block;
+  }
+
+  /* line 535, ../sass/main.scss */
+  .bg.bg_yellow {
+    background: none;
+  }
+  /* line 538, ../sass/main.scss */
+  .bg.bg_yellow .yellow_picture {
+    display: none;
+  }
+
+  /* line 544, ../sass/main.scss */
+  .persos {
+    width: 940px;
+    margin: 0 auto;
+    height: 530px;
+    border: solid 2px #4a6398;
+  }
+  /* line 550, ../sass/main.scss */
+  .persos .choose_perso {
+    height: 64px;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    display: block;
+  }
+  /* line 557, ../sass/main.scss */
+  .persos .choose_perso li {
+    list-style: none;
+    display: inline-block;
+    width: 235px;
+    box-sizing: border-box;
+    white-space: 0;
+    height: 100%;
+    color: white;
+    font-family: "South Park";
+    padding: 22px 0;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: top;
+    cursor: pointer;
+    border-bottom: solid 5px #4a6398;
+  }
+  /* line 573, ../sass/main.scss */
+  .persos .choose_perso li.choose_perso_blue {
+    background-color: #4a6398;
+  }
+  /* line 576, ../sass/main.scss */
+  .persos .choose_perso li.choose_perso_red {
+    background-color: #c50a36;
+  }
+  /* line 579, ../sass/main.scss */
+  .persos .choose_perso li.choose_perso_green {
+    background-color: #1fb22c;
+  }
+  /* line 582, ../sass/main.scss */
+  .persos .choose_perso li.choose_perso_orange {
+    background-color: #da5a00;
+  }
+  /* line 588, ../sass/main.scss */
+  .persos h2 {
+    display: none;
+  }
+  /* line 593, ../sass/main.scss */
+  .persos .bg.bg_perso {
+    position: absolute;
+    height: 382px;
+    width: 940px;
+    background-color: transparent;
+    display: none;
+    margin-top: 20px;
+  }
+  /* line 602, ../sass/main.scss */
+  .persos .bg.bg_perso .tastes .like, .persos .bg.bg_perso .tastes .dislike {
+    position: relative;
+    top: -100px;
+    left: 20px;
+  }
+  /* line 609, ../sass/main.scss */
+  .persos .bg.bg_perso .bg_picture {
+    left: 0;
+    margin-top: 30px;
+  }
+  /* line 613, ../sass/main.scss */
+  .persos .bg.bg_perso .bg_picture img {
+    height: 300px;
+  }
+  /* line 617, ../sass/main.scss */
+  .persos .bg.bg_perso .text_perso {
+    left: 30px;
+    text-align: left;
+    width: 550px;
+  }
+  /* line 623, ../sass/main.scss */
+  .persos .bg.bg_perso.bg_blue {
+    display: block;
+  }
+  /* line 625, ../sass/main.scss */
+  .persos .bg.bg_perso.bg_blue h3 {
+    color: #4a6398;
+  }
+  /* line 630, ../sass/main.scss */
+  .persos .bg.bg_perso.bg_red h3 {
+    color: #c50a36;
+  }
+  /* line 635, ../sass/main.scss */
+  .persos .bg.bg_perso.bg_green h3 {
+    color: #1fb22c;
+  }
+  /* line 640, ../sass/main.scss */
+  .persos .bg.bg_perso.bg_orange h3 {
+    color: #da5a00;
+  }
+}
