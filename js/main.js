@@ -86,6 +86,8 @@ $(document).ready(function() {
 		$('.block_blindtest, .block_blindtest .question1').show();
 		window.current_question = 1;
 		window.score = 0;
+
+		$('.picture_blindtest img').attr('src', 'img/quandunami.jpg');
 	});
 
 	$('.block_blindtest .question button').on('click', function() {
@@ -127,6 +129,17 @@ $(document).ready(function() {
 				$('.block_blindtest .question'+window.current_question).hide();
 				window.current_question++;
 				$('.block_blindtest .question'+window.current_question).show();
+
+				if(window.current_question === 2) {
+					$('.picture_blindtest img').attr('src', 'img/dog.jpg');
+				} else if(window.current_question === 3) {
+					$('.picture_blindtest img').attr('src', 'img/californie.jpg');
+				} else if(window.current_question === 4) {
+					$('.picture_blindtest img').attr('src', 'img/pokerface.jpg');
+				} else if(window.current_question === 5) {
+					$('.picture_blindtest img').attr('src', 'img/token.jpg');
+				}
+
 			}, 2500);
 		}
 	});
@@ -151,6 +164,37 @@ $(document).ready(function() {
 				$(this).attr('data-id')
 			});
 		}
+	});
+
+	/*
+	*	CONTACT
+	*/
+
+	$('form').on('submit', function(e) {
+		e.preventDefault();
+
+		var check = true;
+
+		var name = $('input[name=name]');
+		var secret = $('input[name=secret]');
+		var text = $('textarea[name=text]');
+		var member = $('input[name=member]');
+
+		if(
+			(name === null && name === '') ||
+			(text === null && text === '') ||
+			(member === null && member === '')
+		)
+		{
+			check = false;
+		}
+
+		if(check === true) {
+			$('.content_form form').hide();
+			$('.content_form .validation').show();
+		}
+
+
 	});
 
 

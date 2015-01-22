@@ -6,8 +6,9 @@
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/lightbox.css" />
 	</head>
-	<body>
+	<body class="body_gallery">
 
 		<header>
 			<nav id="navigation">
@@ -80,7 +81,9 @@
 
 				<ul class="gallery">
 					<li class="picture_gallery" data-filter="episode" data-sortperso="5">
-						<img src="img/1920X1200/chinaproblem.jpg" alt="Le problème chinois" />
+						<a href="img/1920X1200/chinaproblem.jpg" data-lightbox="roadtrip">
+							<img src="img/1920X1200/chinaproblem.jpg" alt="Le problème chinois" />
+						</a>
 					</li>
 					<li class="picture_gallery" data-filter="group" data-sortperso="8">
 						<img src="img/1920X1200/coonfriends.jpg" alt="Le Coon et sa bande" />
@@ -146,6 +149,7 @@
 		</footer>
 			
 		<script src="js/jquery-1.11.1.js"></script>
+		<script src="js/lightbox.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

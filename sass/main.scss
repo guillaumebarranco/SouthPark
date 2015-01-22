@@ -12,6 +12,10 @@ $green : #219f07;
     font-family: "Bebas Neue";
     src: url(font/bn.otf);
 }
+@font-face {
+    font-family: "Quicksand";
+    src: url(font/Quicksand-Regular.otf);
+}
 
 html, body {
 	margin: 0;
@@ -170,11 +174,25 @@ $browser-context: 16; // Default
 			top: 13px;
 			left: 13px;
 		}
+
+		i {
+			top: 16px;
+			position: relative;
+			font-size: 28px;
+			color: white;
+		}
 	}
 
 	&:hover {
 		background: white;
 		color: darken($red_button, 10%);
+
+		div {
+
+			i {
+				color: white;
+			}
+		}
 	}
 }
 
@@ -331,7 +349,7 @@ a {
 */
 
 .picture_blindtest {
-	width: 500px;
+	width: 300px;
 	margin: 0 auto;
 
 	img {
@@ -403,7 +421,7 @@ a {
 *	CONTACT
 */
 
-$width_contact : 700px;
+$width_contact : 300px;
 
 #contact {
 	h2 {
@@ -457,6 +475,17 @@ form {
 	}
 }
 
+.asterix {
+	color: red;
+}
+
+.validation {
+	text-align: center;
+	margin: 66px 0;
+	color: forestgreen;
+	font-size: em(22);
+}
+
 /*
 *	FOOTER
 */
@@ -496,6 +525,22 @@ footer {
 }
 
 @media screen and(min-width: 640px) {
+	$width_contact: 600px;
+
+	form {
+		width: $width_contact;
+
+		.style_input {
+			input[type=text], textarea {
+				width: $width_contact;
+			}
+		}
+	
+	}
+	.div_letter {
+		width: $width_contact;
+	}
+
 	.bg {
 		&.bg_perso {
 
@@ -549,9 +594,14 @@ footer {
 			height: 90%;
 		}
 	}
+
+	.picture_blindtest {
+		width: 500px;
+	}
 }
 
 @media screen and(min-width: 1024px) {
+
 	.menu {
 		padding: 0;
 		width: 1000px;
@@ -606,6 +656,16 @@ footer {
 		max-width: 1024px;
 		margin: 0 auto;
 	}
+	.body_gallery {
+		#container {
+			max-width: 90%;
+		}
+	}
+
+	.gallery li {
+		width: 500px;
+	}
+		
 
 	.device {
 		height: 600px;
@@ -726,6 +786,22 @@ footer {
 				}
 			}
 		}
+	}
+
+	$width_contact: 800px;
+
+	form {
+		width: $width_contact;
+
+		.style_input {
+			input[type=text], textarea {
+				width: $width_contact;
+			}
+		}
+	
+	}
+	.div_letter {
+		width: $width_contact;
 	}
 
 	

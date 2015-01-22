@@ -68,29 +68,35 @@
 
 				<h2>Ecrivez une petite lettre a vos personnages preferes !</h2>
 
-				<form action="#" method="post">
-					<div class="style_input">
-						<label for="name">Nom</label>
-						<input type="text" name="name" />
-					</div>
-					<div class="style_input">
-						<label for="secret">Identité secrète</label>
-						<input type="text" name="secret" />
-					</div>
-					<div class="style_input">
-						<label for="text">Message</label>
-						<textarea name="text"></textarea>
-					</div>
-					<div class="style_input style_radio">
-						<label for="member">Acceptez-vous d'être membre du Coon est sa bande ?</label>
-						<input type="radio" value="1" name="member" /> Oui
-						<input type="radio" value="0" name="member" /> Non
-					</div>
+				<div class="content_form">
+					<form action="#" method="post">
+						<div class="style_input">
+							<label for="name">Nom <span class="asterix">*</span></label>
+							<input type="text" name="name" />
+						</div>
+						<div class="style_input">
+							<label for="secret">Identité secrète</label>
+							<input type="text" name="secret" />
+						</div>
+						<div class="style_input">
+							<label for="text">Message <span class="asterix">*</span></label>
+							<textarea name="text"></textarea>
+						</div>
+						<div class="style_input style_radio">
+							<label for="member">Acceptez-vous d'être membre du Coon est sa bande ? <span class="asterix">*</span></label>
+							<input type="radio" value="1" name="member" /> Oui
+							<input type="radio" value="0" name="member" /> Non
+						</div>
 
-					<div class="style_input">
-						<input type="submit" value="Envoyer" class="button_red" />
+						<div class="style_input">
+							<input type="submit" value="Envoyer" class="button_red" />
+						</div>
+					</form>
+
+					<div class="validation">
+						Merci d'avoir envoyé une lettre aux enfants !
 					</div>
-				</form>
+				</div>
 
 				<!-- 
 					South Park Steak House
@@ -98,6 +104,16 @@
 					(719) 836-7031 
 				-->
 			</div>
+
+			<div class="block div_letter">
+				<img src="img/location.jpg" alt="image Google Map de South Park" />
+				<div>
+					South Park, Colorado - États-Unis <br />
+					(719) 836-7031 
+				</div>
+			</div>
+
+
 		</div>
 
 		<footer>
