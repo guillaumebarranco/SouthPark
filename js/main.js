@@ -170,6 +170,19 @@ $(document).ready(function() {
 	*	CONTACT
 	*/
 
+	var check_no = 0;
+
+	$('input[name=member]').on('change', function() {
+		if($(this).val() == "0") {
+			$('.coon img').attr('src', 'img/coonanger.png');
+			check_no = 1;
+		}
+
+		if($(this).val() == "1" && check_no === 1) {
+			$('.coon img').attr('src', 'img/coonrassured.png');
+		}
+	});
+
 	$('form').on('submit', function(e) {
 		e.preventDefault();
 

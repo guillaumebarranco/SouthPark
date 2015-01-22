@@ -65,28 +65,31 @@
 			<section id="gallery">
 				<h1>South Park : Galerie</h1>
 
-				<select name="filter">
-					<option value="all">Tous</option>
-					<option value="comic">Style Comics</option>
-					<option value="cartman">Cartman</option>
-					<option value="episode">Episodes</option>
-					<option value="group">Groupe</option>
-					<option value="unclassifiable">Inclassable</option>
-				</select>
+				<div class="div_select_gallery">
+					<label for="filter">Filtre</label>
+						<select name="filter">
+						<option value="all">Tous</option>
+						<option value="comic">Style Comics</option>
+						<option value="cartman">Cartman</option>
+						<option value="episode">Episodes</option>
+						<option value="group">Groupe</option>
+						<option value="unclassifiable">Inclassable</option>
+					</select>
+				</div>
 
-				<select name="sort">
-					<option value="none">Aucun</option>
-					<option value="nb_persos">Nombre de personnages</option>
-				</select>
+				<div class="div_select_gallery">
+					<label for="Sort">Tri</label>
+						<select name="sort">
+							<option value="none">Aucun</option>
+							<option value="nb_persos">Nombre de personnages</option>
+						</select>
+				</div>
 
 				<ul class="gallery">
 					<li class="picture_gallery" data-filter="episode" data-sortperso="5">
 						<a href="img/1920X1200/chinaproblem.jpg" data-lightbox="roadtrip">
 							<img src="img/1920X1200/chinaproblem.jpg" alt="Le problème chinois" />
 						</a>
-					</li>
-					<li class="picture_gallery" data-filter="group" data-sortperso="8">
-						<img src="img/1920X1200/coonfriends.jpg" alt="Le Coon et sa bande" />
 					</li>
 					<li class="picture_gallery" data-filter="cartman" data-sortperso="1">
 						<img src="img/1920X1200/dog.jpg" alt="The big bad dog" />
@@ -96,6 +99,9 @@
 					</li>
 					<li class="picture_gallery" data-filter="episode" data-sortperso="40">
 						<img src="img/1920X1200/jerseything.jpg" alt="Un truc New-Jersien" />
+					</li>
+					<li class="picture_gallery" data-filter="group" data-sortperso="8">
+						<img src="img/1920X1200/coonfriends.jpg" alt="Le Coon et sa bande" />
 					</li>
 
 
@@ -121,6 +127,9 @@
 					</li>
 					<li class="picture_gallery" data-filter="unclassifiable" data-sortperso="2">
 						<img src="img/1920X1200/terrencephillipe.jpg" alt="Terrence et Philippe" />
+					</li>
+					<li class="picture_gallery" data-filter="group" data-sortperso="2">
+						<img src="img/1920X1200/sogay.jpg" alt="South Park est gay" />
 					</li>
 				</ul>
 			</section>
