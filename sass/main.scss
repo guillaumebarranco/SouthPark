@@ -24,7 +24,7 @@ html, body {
 	font-family: "Helvetica";
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family : "South Park";
 	color: #000;
 }
@@ -631,6 +631,104 @@ footer {
 	.picture_blindtest {
 		width: 500px;
 	}
+}
+
+/* Calendrier */
+
+#intro_calendar {
+	display: block;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#miniatures {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.date {
+	display: inline-block;
+	width: 200px;
+	margin-right: 42px;
+	margin-bottom: 50px;
+
+	&:nth-child(4n+0) {
+		margin-right: 0;
+	}
+}
+
+#overlay { 
+	display: none; 
+	background: #000;
+	position: fixed; 
+	left: 0; 
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+
+.popup {
+	display: none;
+	border: solid 2px #000;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 99999;
+}
+
+.titre {
+	width: 100%;
+	height: 70px;
+	background: $green_arrow;
+	padding: 10px;
+	border-bottom: solid 2px #000;
+	position: relative;
+	@include box-sizing(border-box);
+
+	h2 {
+		color: #fff;
+	}
+}
+
+.detail {
+	padding: 10px;
+}
+
+.image {
+	display: inline-block;
+
+	img {
+		width: 300px;
+		border: none;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.info{
+	display: inline-block;
+	vertical-align: top;
+
+	h3 {
+		display: inline-block;
+	}
+
+	p{
+		display: inline-block;
+		margin-left: 20px;
+	}
+}
+
+.description {
+	width: 100%;
+}
+
+img.btn_close {
+	float: right;
+	margin: -55px -55px 0 0;
 }
 
 @media screen and(min-width: 1024px) {

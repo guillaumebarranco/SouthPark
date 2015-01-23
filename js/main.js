@@ -210,5 +210,38 @@ $(document).ready(function() {
 
 	});
 
+	/*
+	*	POPUP CALENDRIER
+	*/
+
+						   		   
+	$('a.poplight').on('click', function() {
+		var popID = $(this).data('rel');
+		var popWidth = $(this).data('width');
+
+		$('#' + popID).fadeIn().css({ 'width': popWidth}).prepend('<a href="#" class="close"><img src="img/close_calendar.png" class="btn_close" title="Close Window" alt="Close" /></a>');
+		
+		var popMargTop = ($('#' + popID).height() + 80) / 2;
+		var popMargLeft = ($('#' + popID).width() + 80) / 2;
+		
+		$('#' + popID).css({ 
+			'margin-top' : -popMargTop,
+			'margin-left' : -popMargLeft
+		});
+		
+		$('body').append('<div id="overlay"></div>');
+		$('#overlay').css({'filter' : 'alpha(opacity=80)'}).fadeIn();
+		
+		return false;
+	});
+	
+	
+	$('body').on('click', 'a.close, #overlay', function() {
+		$('#overlay , .popup').fadeOut(function() {
+			$('#overlay, a.close').remove();  
+	});
+		
+		return false;
+	});
 
 });
