@@ -350,6 +350,17 @@ a {
 	}
 }
 
+.result_blindtest  {
+	display: none;
+	text-align: center;
+	margin: 50px;
+	box-sizing: border-box;
+
+	p {
+		font-size: 20px;
+	}
+}
+
 .launch_blindtest {
 	margin: 0 auto;
 	margin-top: 50px;
