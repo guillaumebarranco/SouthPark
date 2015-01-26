@@ -94,6 +94,8 @@ $(document).ready(function() {
 
 		if($(this).parent().hasClass('question5')) { // Si il s'agit de la dernière question
 
+			$('.what_answer').show();
+
 			if($(this).hasClass('good_answer')) {
 				$('.what_answer img').attr('src', 'img/good_answer.png');
 				$('.block_blindtest .question'+window.current_question+' button').css('background', 'red');
@@ -106,6 +108,7 @@ $(document).ready(function() {
 			}
 
 			setTimeout(function() {
+				$('.what_answer').hide();
 				$('.what_answer img').attr('src', '');
 				$('.block_blindtest .question'+window.current_question).hide();
 
@@ -138,6 +141,8 @@ $(document).ready(function() {
 			}, 2500);
 
 		} else {
+			
+			$('.what_answer').show();
 
 			if($(this).hasClass('good_answer')) {
 				$('.what_answer img').attr('src', 'img/good_answer.png');
@@ -151,6 +156,7 @@ $(document).ready(function() {
 			}
 
 			setTimeout(function() {
+				$('.what_answer').hide();
 				$('.what_answer img').attr('src', '');
 				$('.block_blindtest .question'+window.current_question).hide();
 				window.current_question++;

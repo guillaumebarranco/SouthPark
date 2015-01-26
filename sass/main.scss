@@ -1,9 +1,5 @@
 @import "compass";
 
-//@include font-face("South Park", font-files("../font/sp.otf", "../font/sp.eot", "../font/sp.svg", "../font/sp.ttf", "../font/sp.woff" ));
-
-$green : #219f07;
-
 @font-face {
     font-family: "South Park";
     src: url(font/sp.woff);
@@ -53,13 +49,14 @@ $browser-context: 16; // Default
 /*
 *	GENERAL
 */
+
 .block {
 	display: block;
 	margin: 0 auto;
 }
 
 #navigation {
-	background: $green;
+	background-color: $green;
 	height: auto;
 	position: relative;
 
@@ -152,8 +149,6 @@ $browser-context: 16; // Default
 	}
 }
 
-
-
 .button_red {
 	background-color: $red_button;
 	height: 50px;
@@ -194,13 +189,13 @@ $browser-context: 16; // Default
 		i {
 			top: 16px;
 			position: relative;
-			font-size: 28px;
+			font-size: em(20);
 			color: white;
 		}
 	}
 
 	&:hover {
-		background: white;
+		background-color: white;
 		color: darken($red_button, 10%);
 
 		div {
@@ -221,6 +216,7 @@ a {
 		padding: 14px 0px;
 	}
 }
+
 /*
 *	HOME
 */
@@ -283,7 +279,7 @@ a {
   @include border-radius(40px);
 }
 .swiper-active-switch {
-  background: $green_arrow;
+  background-color: $green_arrow;
 }
 
 .img_head {
@@ -325,7 +321,7 @@ a {
 	}
 
 	&.bg_yellow {
-		background: $yellow;
+		background-color: $yellow;
 
 		.yellow_picture {
 			float: left;
@@ -370,10 +366,10 @@ a {
 	display: none;
 	text-align: center;
 	margin: 50px;
-	box-sizing: border-box;
+	@include box-sizing(border-box);
 
 	p {
-		font-size: 20px;
+		font-size: em(20);
 	}
 }
 
@@ -395,7 +391,7 @@ a {
 			font-family: "Bebas Neue";
 			display: block;
 			@include transition(0.4s);
-			background: #a58680;
+			background-color: #a58680;
 			padding: 20px 0px;
 			width: 270px;
 			color: white;
@@ -403,7 +399,7 @@ a {
 			margin: 0 auto;
 			margin-top: 10px;
 			font-size: em(22);
-			box-sizing: border-box;
+			@include box-sizing(border-box);
 			height: 69px;
 
 			&:hover {
@@ -417,6 +413,7 @@ a {
 	position: absolute;
 	top: 500px;
 	left: 710px;
+	display: none;
 }
 
 /*
@@ -434,11 +431,11 @@ a {
 		padding: 7px 13px;
 		font-family: "Bebas Neue";
 		letter-spacing: 5px;
-		font-size: 21px;
+		font-size: em(21);
 	}
 
 	label {
-		font-size: 18px;
+		font-size: em(18);
 		margin-right: 12px;
 	}
 }
@@ -491,7 +488,7 @@ a {
 
 #overlay { 
 	display: none; 
-	background: #000;
+	background-color: #000;
 	position: fixed; 
 	left: 0; 
 	top: 0;
@@ -504,7 +501,7 @@ a {
 .popup {
 	display: none;
 	border: solid 2px #000;
-	background: #fff;
+	background-color: #fff;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -514,7 +511,7 @@ a {
 .titre {
 	width: 100%;
 	height: 70px;
-	background: $green_arrow;
+	background-color: $green_arrow;
 	padding: 10px;
 	border-bottom: solid 2px #000;
 	position: relative;
@@ -708,8 +705,8 @@ footer {
 				width: $width_contact;
 			}
 		}
-	
 	}
+
 	.div_letter {
 		width: $width_contact;
 	}
@@ -739,11 +736,6 @@ footer {
 				position: relative;
 				top: -20px;
 			}
-			/*.bg_picture {
-				img {
-					@include rotate(-15deg);
-				}
-			}*/
 
 			&:nth-child(even) {
 				.text_perso {
@@ -752,13 +744,8 @@ footer {
 				}
 				.bg_picture {
 					left: 300px;
-
-					/*img {
-						@include rotate(15deg);
-					}*/
 				}
 			}
-
 		}
 	}
 
@@ -851,6 +838,7 @@ footer {
 
 			#logo {
 				background-image: url('../img/logo2.png');
+				background-repeat: no-repeat;
 				width: 90px;
 				height: 93px;
 			}
@@ -927,14 +915,14 @@ footer {
 				list-style: none;
 				display: inline-block;
 				width: 235px;
-				box-sizing: border-box;
+				@include box-sizing(border-box);
 				white-space: 0;
 				height: 100%;
 				color: white;
 				font-family: "South Park";
 				padding: 22px 0;
 				text-align: center;
-				font-size: 20px;
+				font-size: 20px; // ne pas mettre en EM !!!
 				vertical-align: top;
 				cursor: pointer;
 				border-bottom: solid 5px $blue;
