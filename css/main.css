@@ -452,234 +452,42 @@ a.button_red {
   width: 100%;
 }
 
-/*
-*	CONTACT
-*/
-/* line 452, ../sass/main.scss */
-#contact h2 {
-  text-align: center;
-}
-
-/* line 457, ../sass/main.scss */
-form {
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-/* line 463, ../sass/main.scss */
-form .style_input {
-  margin: 10px 0;
-}
-/* line 466, ../sass/main.scss */
-form .style_input.style_radio {
-  height: 150px;
-  position: relative;
-}
-/* line 470, ../sass/main.scss */
-form .style_input.style_radio input {
-  margin-top: 15px;
-  margin-left: 15px;
-}
-/* line 476, ../sass/main.scss */
-form .style_input label {
-  display: block;
-  font-size: 1.25em;
-  margin: 5px 0;
-}
-/* line 482, ../sass/main.scss */
-form .style_input input[type=text], form .style_input textarea {
-  width: 300px;
-  border: solid 1px #1fb22c;
-  box-shadow: none;
-  padding: 12px 12px 12px 8px;
-  font-size: 1.125em;
-  resize: none;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 492, ../sass/main.scss */
-form .style_input textarea {
-  height: 180px;
-}
-
-/* line 498, ../sass/main.scss */
-.div_letter {
-  width: 300px;
-}
-/* line 501, ../sass/main.scss */
-.div_letter img {
-  width: 100%;
-}
-
-/* line 506, ../sass/main.scss */
-.asterix {
-  color: red;
-}
-
-/* line 510, ../sass/main.scss */
-.coon {
-  position: absolute;
-  top: 50px;
-}
-
-/* line 515, ../sass/main.scss */
-.validation {
-  display: none;
-  text-align: center;
-  margin: 66px 0;
-  color: #1fb22c;
-  font-size: 1.375em;
-}
-
-/*
-*	FOOTER
-*/
-/* line 527, ../sass/main.scss */
-footer {
-  padding: 20px;
-  background-color: #1c1c1c;
-  color: white;
-  text-align: center;
-  font-family: "Quicksand";
-}
-/* line 534, ../sass/main.scss */
-footer a {
-  color: white;
-  text-decoration: none;
-}
-/* line 538, ../sass/main.scss */
-footer a:hover {
-  text-decoration: underline;
-}
-/* line 543, ../sass/main.scss */
-footer ul {
-  margin: 0;
-}
-/* line 545, ../sass/main.scss */
-footer ul li {
-  list-style: none;
-  display: inline-block;
-  margin: 0;
-}
-/* line 550, ../sass/main.scss */
-footer ul li.separator {
-  width: 20px;
-}
-/* line 554, ../sass/main.scss */
-footer ul li i {
-  font-size: 2.5em;
-}
-
-@media screen and (min-width: 640px) {
-  /* line 564, ../sass/main.scss */
-  .button_mobile {
-    display: none;
-  }
-
-  /* line 568, ../sass/main.scss */
-  form {
-    width: 600px;
-  }
-  /* line 572, ../sass/main.scss */
-  form .style_input input[type=text], form .style_input textarea {
-    width: 600px;
-  }
-
-  /* line 578, ../sass/main.scss */
-  .div_letter {
-    width: 600px;
-  }
-
-  /* line 583, ../sass/main.scss */
-  .bg.bg_perso {
-    /*.bg_picture {
-    	img {
-    		@include rotate(-15deg);
-    	}
-    }*/
-  }
-  /* line 585, ../sass/main.scss */
-  .bg.bg_perso .tastes {
-    margin: 0 auto;
-    width: 310px;
-  }
-  /* line 589, ../sass/main.scss */
-  .bg.bg_perso .tastes .like, .bg.bg_perso .tastes .dislike {
-    display: inline-block;
-    vertical-align: top;
-    width: 150px;
-  }
-  /* line 594, ../sass/main.scss */
-  .bg.bg_perso .tastes .like ul, .bg.bg_perso .tastes .dislike ul {
-    padding: 0;
-  }
-  /* line 600, ../sass/main.scss */
-  .bg.bg_perso .bg_picture, .bg.bg_perso .text_perso {
-    display: inline-block;
-    width: 300px;
-    vertical-align: top;
-    position: relative;
-    top: -20px;
-  }
-  /* line 614, ../sass/main.scss */
-  .bg.bg_perso:nth-child(even) .text_perso {
-    left: -300px;
-    text-align: right;
-  }
-  /* line 618, ../sass/main.scss */
-  .bg.bg_perso:nth-child(even) .bg_picture {
-    left: 300px;
-    /*img {
-    	@include rotate(15deg);
-    }*/
-  }
-
-  /* line 631, ../sass/main.scss */
-  .device .button_red {
-    position: absolute;
-    z-index: 3;
-    bottom: 35px;
-    right: 60px;
-  }
-  /* line 637, ../sass/main.scss */
-  .device .swiper-container {
-    height: 90%;
-  }
-
-  /* line 642, ../sass/main.scss */
-  .picture_blindtest {
-    width: 500px;
-  }
-}
 /* Calendrier */
-/* line 649, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 #intro_calendar {
   display: block;
   text-align: center;
   margin-bottom: 50px;
 }
 
-/* line 655, ../sass/main.scss */
+/* line 453, ../sass/main.scss */
 #miniatures {
-  width: 940px;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
-/* line 660, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 .date {
-  display: inline-block;
+  display: none;
   width: 200px;
   margin-right: 42px;
   margin-bottom: 50px;
 }
-/* line 666, ../sass/main.scss */
-.date:nth-child(4n+0) {
-  margin-right: 0;
+
+/* line 466, ../sass/main.scss */
+#intro_calendar p {
+  padding: 20px;
 }
 
-/* line 671, ../sass/main.scss */
+/* line 470, ../sass/main.scss */
+.date_m img {
+  width: 100%;
+  border-bottom: solid 2px #000;
+  display: block;
+}
+
+/* line 476, ../sass/main.scss */
 #overlay {
   display: none;
   background: #000;
@@ -692,7 +500,7 @@ footer ul li i {
   z-index: 9999;
 }
 
-/* line 683, ../sass/main.scss */
+/* line 488, ../sass/main.scss */
 .popup {
   display: none;
   border: solid 2px #000;
@@ -703,7 +511,7 @@ footer ul li i {
   z-index: 99999;
 }
 
-/* line 693, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 .titre {
   width: 100%;
   height: 70px;
@@ -715,21 +523,21 @@ footer ul li i {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 702, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 .titre h2 {
   color: #fff;
 }
 
-/* line 707, ../sass/main.scss */
+/* line 512, ../sass/main.scss */
 .detail {
   padding: 10px;
 }
 
-/* line 711, ../sass/main.scss */
+/* line 516, ../sass/main.scss */
 .image {
   display: inline-block;
 }
-/* line 714, ../sass/main.scss */
+/* line 519, ../sass/main.scss */
 .image img {
   width: 300px;
   border: none;
@@ -737,34 +545,270 @@ footer ul li i {
   margin-bottom: 20px;
 }
 
-/* line 722, ../sass/main.scss */
+/* line 527, ../sass/main.scss */
 .info {
   display: inline-block;
   vertical-align: top;
 }
-/* line 726, ../sass/main.scss */
+/* line 531, ../sass/main.scss */
 .info h3 {
   display: inline-block;
 }
-/* line 730, ../sass/main.scss */
+/* line 535, ../sass/main.scss */
 .info p {
   display: inline-block;
   margin-left: 20px;
 }
 
-/* line 736, ../sass/main.scss */
+/* line 541, ../sass/main.scss */
 .description {
   width: 100%;
 }
 
-/* line 740, ../sass/main.scss */
+/* line 545, ../sass/main.scss */
 img.btn_close {
   float: right;
   margin: -55px -55px 0 0;
 }
 
-@media screen and (min-width: 1024px) {
+/*
+*	CONTACT
+*/
+/* line 557, ../sass/main.scss */
+#contact h2 {
+  text-align: center;
+}
+
+/* line 562, ../sass/main.scss */
+form {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+/* line 568, ../sass/main.scss */
+form .style_input {
+  margin: 10px 0;
+}
+/* line 571, ../sass/main.scss */
+form .style_input.style_radio {
+  height: 150px;
+  position: relative;
+}
+/* line 575, ../sass/main.scss */
+form .style_input.style_radio input {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+/* line 581, ../sass/main.scss */
+form .style_input label {
+  display: block;
+  font-size: 1.25em;
+  margin: 5px 0;
+}
+/* line 587, ../sass/main.scss */
+form .style_input input[type=text], form .style_input textarea {
+  width: 300px;
+  border: solid 1px #1fb22c;
+  box-shadow: none;
+  padding: 12px 12px 12px 8px;
+  font-size: 1.125em;
+  resize: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 597, ../sass/main.scss */
+form .style_input textarea {
+  height: 180px;
+}
+
+/* line 603, ../sass/main.scss */
+.div_letter {
+  width: 300px;
+}
+/* line 606, ../sass/main.scss */
+.div_letter img {
+  width: 100%;
+}
+
+/* line 611, ../sass/main.scss */
+.asterix {
+  color: red;
+}
+
+/* line 615, ../sass/main.scss */
+.coon {
+  position: absolute;
+  top: 50px;
+}
+
+/* line 620, ../sass/main.scss */
+.validation {
+  display: none;
+  text-align: center;
+  margin: 66px 0;
+  color: #1fb22c;
+  font-size: 1.375em;
+}
+
+/*
+*	FOOTER
+*/
+/* line 632, ../sass/main.scss */
+footer {
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  font-family: "Quicksand";
+}
+/* line 639, ../sass/main.scss */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+/* line 643, ../sass/main.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+/* line 648, ../sass/main.scss */
+footer ul {
+  margin: 0;
+}
+/* line 650, ../sass/main.scss */
+footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+}
+/* line 655, ../sass/main.scss */
+footer ul li.separator {
+  width: 20px;
+}
+/* line 659, ../sass/main.scss */
+footer ul li i {
+  font-size: 2.5em;
+}
+
+@media screen and (min-width: 640px) {
+  /* line 669, ../sass/main.scss */
+  .button_mobile {
+    display: none;
+  }
+
+  /* line 673, ../sass/main.scss */
+  form {
+    width: 600px;
+  }
+  /* line 677, ../sass/main.scss */
+  form .style_input input[type=text], form .style_input textarea {
+    width: 600px;
+  }
+
+  /* line 683, ../sass/main.scss */
+  .div_letter {
+    width: 600px;
+  }
+
+  /* line 688, ../sass/main.scss */
+  .bg.bg_perso {
+    /*.bg_picture {
+    	img {
+    		@include rotate(-15deg);
+    	}
+    }*/
+  }
+  /* line 690, ../sass/main.scss */
+  .bg.bg_perso .tastes {
+    margin: 0 auto;
+    width: 310px;
+  }
+  /* line 694, ../sass/main.scss */
+  .bg.bg_perso .tastes .like, .bg.bg_perso .tastes .dislike {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+  }
+  /* line 699, ../sass/main.scss */
+  .bg.bg_perso .tastes .like ul, .bg.bg_perso .tastes .dislike ul {
+    padding: 0;
+  }
+  /* line 705, ../sass/main.scss */
+  .bg.bg_perso .bg_picture, .bg.bg_perso .text_perso {
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    position: relative;
+    top: -20px;
+  }
+  /* line 719, ../sass/main.scss */
+  .bg.bg_perso:nth-child(even) .text_perso {
+    left: -300px;
+    text-align: right;
+  }
+  /* line 723, ../sass/main.scss */
+  .bg.bg_perso:nth-child(even) .bg_picture {
+    left: 300px;
+    /*img {
+    	@include rotate(15deg);
+    }*/
+  }
+
+  /* line 736, ../sass/main.scss */
+  .device .button_red {
+    position: absolute;
+    z-index: 3;
+    bottom: 35px;
+    right: 60px;
+  }
+  /* line 742, ../sass/main.scss */
+  .device .swiper-container {
+    height: 90%;
+  }
+
   /* line 747, ../sass/main.scss */
+  .picture_blindtest {
+    width: 500px;
+  }
+
+  /* line 751, ../sass/main.scss */
+  #miniatures {
+    width: 640px;
+  }
+
+  /* line 756, ../sass/main.scss */
+  .date {
+    display: inline-block;
+  }
+  /* line 759, ../sass/main.scss */
+  .date img {
+    transform-origin: top 0 left 0;
+    transform: scale(1);
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+  }
+  /* line 765, ../sass/main.scss */
+  .date img:hover {
+    transform-origin: top 5px left 5px;
+    transform: scale(1.15);
+    -moz-box-shadow: 5px 5px 20px 0 #000;
+    -webkit-box-shadow: 5px 5px 20px 0 #000;
+    box-shadow: 5px 5px 20px 0 #000;
+  }
+
+  /* line 773, ../sass/main.scss */
+  .date_m {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  /* line 780, ../sass/main.scss */
   .menu {
     padding: 0;
     width: 1000px;
@@ -777,83 +821,83 @@ img.btn_close {
     position: relative;
     top: -15px;
   }
-  /* line 759, ../sass/main.scss */
+  /* line 792, ../sass/main.scss */
   .menu li {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
   }
-  /* line 764, ../sass/main.scss */
+  /* line 797, ../sass/main.scss */
   .menu li a {
     width: 100%;
     display: block;
     color: white;
     text-decoration: none;
   }
-  /* line 770, ../sass/main.scss */
+  /* line 803, ../sass/main.scss */
   .menu li a.link_active {
     color: black;
   }
-  /* line 774, ../sass/main.scss */
+  /* line 807, ../sass/main.scss */
   .menu li a:hover {
     text-decoration: none;
     color: black;
   }
 
-  /* line 781, ../sass/main.scss */
+  /* line 814, ../sass/main.scss */
   .menu_mobile, .traits {
     display: none;
   }
 
-  /* line 789, ../sass/main.scss */
+  /* line 822, ../sass/main.scss */
   #navigation .bandeau_top #logo {
     background-image: url("../img/logo2.png");
     width: 90px;
     height: 93px;
   }
 
-  /* line 797, ../sass/main.scss */
+  /* line 830, ../sass/main.scss */
   #container {
     max-width: 1024px;
     margin: 0 auto;
   }
 
-  /* line 802, ../sass/main.scss */
+  /* line 835, ../sass/main.scss */
   .body_gallery #container {
     max-width: 90%;
   }
 
-  /* line 807, ../sass/main.scss */
+  /* line 840, ../sass/main.scss */
   .gallery li {
     width: 500px;
   }
 
-  /* line 812, ../sass/main.scss */
+  /* line 845, ../sass/main.scss */
   .device {
     height: 600px;
   }
-  /* line 814, ../sass/main.scss */
+  /* line 847, ../sass/main.scss */
   .device .arrow-left, .device .arrow-right {
     display: block;
   }
 
-  /* line 820, ../sass/main.scss */
+  /* line 853, ../sass/main.scss */
   .bg.bg_yellow {
     background: none;
   }
-  /* line 823, ../sass/main.scss */
+  /* line 856, ../sass/main.scss */
   .bg.bg_yellow .yellow_picture {
     display: none;
   }
 
-  /* line 829, ../sass/main.scss */
+  /* line 862, ../sass/main.scss */
   .persos {
     width: 940px;
     margin: 0 auto;
     height: 530px;
     border: solid 2px #4a6398;
   }
-  /* line 835, ../sass/main.scss */
+  /* line 868, ../sass/main.scss */
   .persos .choose_perso {
     height: 64px;
     padding: 0;
@@ -861,7 +905,7 @@ img.btn_close {
     font-size: 0;
     display: block;
   }
-  /* line 842, ../sass/main.scss */
+  /* line 875, ../sass/main.scss */
   .persos .choose_perso li {
     list-style: none;
     display: inline-block;
@@ -878,27 +922,27 @@ img.btn_close {
     cursor: pointer;
     border-bottom: solid 5px #4a6398;
   }
-  /* line 858, ../sass/main.scss */
+  /* line 891, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_blue {
     background-color: #4a6398;
   }
-  /* line 861, ../sass/main.scss */
+  /* line 894, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_red {
     background-color: #c50a36;
   }
-  /* line 864, ../sass/main.scss */
+  /* line 897, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_green {
     background-color: #1fb22c;
   }
-  /* line 867, ../sass/main.scss */
+  /* line 900, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_orange {
     background-color: #da5a00;
   }
-  /* line 873, ../sass/main.scss */
+  /* line 906, ../sass/main.scss */
   .persos h2 {
     display: none;
   }
-  /* line 878, ../sass/main.scss */
+  /* line 911, ../sass/main.scss */
   .persos .bg.bg_perso {
     position: absolute;
     height: 382px;
@@ -907,59 +951,70 @@ img.btn_close {
     display: none;
     margin-top: 20px;
   }
-  /* line 887, ../sass/main.scss */
+  /* line 920, ../sass/main.scss */
   .persos .bg.bg_perso .tastes .like, .persos .bg.bg_perso .tastes .dislike {
     position: relative;
     top: -100px;
     left: 20px;
   }
-  /* line 894, ../sass/main.scss */
+  /* line 927, ../sass/main.scss */
   .persos .bg.bg_perso .bg_picture {
     left: 0;
     margin-top: 30px;
   }
-  /* line 898, ../sass/main.scss */
+  /* line 931, ../sass/main.scss */
   .persos .bg.bg_perso .bg_picture img {
     height: 300px;
   }
-  /* line 902, ../sass/main.scss */
+  /* line 935, ../sass/main.scss */
   .persos .bg.bg_perso .text_perso {
     left: 30px;
     text-align: left;
     width: 550px;
   }
-  /* line 908, ../sass/main.scss */
+  /* line 941, ../sass/main.scss */
   .persos .bg.bg_perso.bg_blue {
     display: block;
   }
-  /* line 910, ../sass/main.scss */
+  /* line 943, ../sass/main.scss */
   .persos .bg.bg_perso.bg_blue h3 {
     color: #4a6398;
   }
-  /* line 915, ../sass/main.scss */
+  /* line 948, ../sass/main.scss */
   .persos .bg.bg_perso.bg_red h3 {
     color: #c50a36;
   }
-  /* line 920, ../sass/main.scss */
+  /* line 953, ../sass/main.scss */
   .persos .bg.bg_perso.bg_green h3 {
     color: #1fb22c;
   }
-  /* line 925, ../sass/main.scss */
+  /* line 958, ../sass/main.scss */
   .persos .bg.bg_perso.bg_orange h3 {
     color: #da5a00;
   }
 
-  /* line 935, ../sass/main.scss */
+  /* line 968, ../sass/main.scss */
   form {
     width: 800px;
   }
-  /* line 939, ../sass/main.scss */
+  /* line 972, ../sass/main.scss */
   form .style_input input[type=text], form .style_input textarea {
     width: 800px;
   }
 
-  /* line 945, ../sass/main.scss */
+  /* line 978, ../sass/main.scss */
   .div_letter {
     width: 800px;
+  }
+
+  /* line 982, ../sass/main.scss */
+  #miniatures {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  /* line 987, ../sass/main.scss */
+  .date:nth-child(4n+0) {
+    margin-right: 42px;
   }
 }
