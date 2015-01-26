@@ -24,6 +24,11 @@ html, body {
 	font-family: "Helvetica";
 }
 
+body {
+	background-image: url('../img/motif.png');
+	background-repeat: repeat;
+}
+
 h1, h2, h3 {
 	font-family : "South Park";
 	color: #000;
@@ -92,7 +97,7 @@ $browser-context: 16; // Default
 	}
 
 	.menu_mobile {
-		height: 230px;
+		height: 360px;
 		display: none;
 		margin: 0;
 		padding: 0;
@@ -101,15 +106,26 @@ $browser-context: 16; // Default
 			list-style: none;
 			@include box-sizing(border-box);
 			text-align: center;
+			position: relative;
+
+			i {
+				font-size: em(24);
+				margin-right: 20px;
+				color: white;
+				position: absolute;
+				top: 20px;
+				left: 126px;
+			}
 
 			a {
-				padding: 13px 0px;
+				padding: 25px 0px;
 				width: 100%;
 				display: block;
 				border-top: solid 1px black;
 				color: white;
 				text-decoration: none;
 				text-transform: uppercase;
+				font-size: em(18);
 
 				&:hover {
 					background-color: darken($green, 15%);
@@ -118,7 +134,7 @@ $browser-context: 16; // Default
 
 			&:last-child {
 				a {
-					padding: 16px 0px;
+					padding: 25px 0px;
 				}
 			}
 		}
@@ -262,7 +278,7 @@ a {
   height: 20px;
   margin: 0 10px;
   cursor: pointer;
-  background: white;
+  background-color: transparent;
   border: solid 1px $green_arrow;
   @include border-radius(40px);
 }
@@ -645,12 +661,26 @@ footer {
 		}
 	}
 
-	ul {
+	.socials {
 		margin: 0;
+
 		li {
 			list-style: none;
 			display: inline-block;
 			margin: 0;
+
+			a {
+				@include transition(0.2s);
+
+				&:hover {
+					&.facebook {
+						color: #3B5998;
+					}
+					&.twitter {
+						color: #4099FF;
+					}
+				}
+			}
 
 			&.separator {
 				width: 20px;
@@ -844,8 +874,29 @@ footer {
 
 	.device {
 		height: 600px;
-		 .arrow-left, .arrow-right {
+
+		.arrow-left, .arrow-right {
+		 	@include transition(0.6s);
+		 	opacity: 0;
 		 	display: block;
+		}
+		.arrow-left {
+			margin-left: -20px;
+		}
+		.arrow-right {
+			margin-right: -20px;
+		}
+
+		&:hover {
+			.arrow-left, .arrow-right {
+			 	opacity: 1;
+			}
+			.arrow-left {
+				margin-left: 10px;
+			}
+			.arrow-right {
+				margin-right: 10px;
+			}
 		}
 	}
 
