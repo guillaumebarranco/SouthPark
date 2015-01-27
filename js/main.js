@@ -94,6 +94,8 @@ $(document).ready(function() {
 
 		if($(this).parent().hasClass('question5')) { // Si il s'agit de la dernière question
 
+			$('.what_answer').show();
+
 			if($(this).hasClass('good_answer')) {
 				$('.what_answer img').attr('src', 'img/good_answer.png');
 				$('.block_blindtest .question'+window.current_question+' button').css('background', 'red');
@@ -106,12 +108,41 @@ $(document).ready(function() {
 			}
 
 			setTimeout(function() {
+				$('.what_answer').hide();
 				$('.what_answer img').attr('src', '');
 				$('.block_blindtest .question'+window.current_question).hide();
-				$('.result_blindtest').text('Votre score est de '+window.score+' points sur 5!');
+
+				var text_result;
+
+				if(window.score === 0) {
+					text_result = 'Tu ferais mieux de rentrer à ta maison.';
+				} else if(window.score === 1) {
+					text_result = 'Mouais. Tu as le niveau d\'un Chinpokomon au maximum.';
+				} else if(window.score === 2) {
+					text_result = 'Pas terrible. Tu peux faire partie des lapins de Pâques, éventuellement.';
+				} else if(window.score === 3) {
+					text_result = 'Tu te débrouilles bien ! Je t\'appelerai pour diriger la Scientologie.';
+				} else if(window.score === 4) {
+					text_result = 'Pas mal ! Mais il serait peut-être temps de sortir au lieu de regarder la télé !';
+				} else if(window.score === 5) {
+					text_result = 'T\'es fier de toi hein ? De toute façon t\'as triché.';
+				}
+
+
+				$('.blindtest_sentence').append(text_result);
+
+				if(window.score < 2) {
+					$('.result_blindtest .score').text(window.score+' point');
+				} else {
+					$('.result_blindtest .score').text(window.score+' points');
+				}
+				
+				$('.result_blindtest').show();
 			}, 2500);
 
 		} else {
+			
+			$('.what_answer').show();
 
 			if($(this).hasClass('good_answer')) {
 				$('.what_answer img').attr('src', 'img/good_answer.png');
@@ -125,6 +156,7 @@ $(document).ready(function() {
 			}
 
 			setTimeout(function() {
+				$('.what_answer').hide();
 				$('.what_answer img').attr('src', '');
 				$('.block_blindtest .question'+window.current_question).hide();
 				window.current_question++;

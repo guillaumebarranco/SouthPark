@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<title>South Park : Contact</title>
+
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -40,19 +43,19 @@
 
 				<ul class="menu_mobile">
 					<li>
-						<a href="index.html">Accueil</a>
+						<i class="fi-home"></i><a href="index.html">Accueil</a>
 					</li>
 					<li>
-						<a href="blindtest.html">Blindtest</a>
+						<i class="fi-trophy"></i><a href="blindtest.html">Blindtest</a>
 					</li>
 					<li>
-						<a href="gallery.html">Gallerie</a>
+						<a href="gallery.html"><i class="fi-eye"></i>Galerie</a>
 					</li>
 					<li>
-						<a href="calendar.html">Calendrier</a>
+						<a href="calendar.html"><i class="fi-calendar"></i>Calendrier</a>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+						<a href="contact.html"><i class="fi-mail"></i>Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -63,7 +66,7 @@
 				<h1>South Park : Contact</h1>
 
 				<div class="block div_letter">
-					<img src="img/letter.jpg" />
+					<img src="img/letter.jpg" alt="Image de Jimmy en train d'écrire" />
 				</div>
 
 				<h2>Ecrivez une petite lettre a vos personnages preferes !</h2>
@@ -72,15 +75,15 @@
 					<form action="#" method="post">
 						<div class="style_input">
 							<label for="name">Nom <span class="asterix">*</span></label>
-							<input type="text" name="name" />
+							<input type="text" id="name" name="name" />
 						</div>
 						<div class="style_input">
 							<label for="secret">Identité secrète</label>
-							<input type="text" name="secret" />
+							<input type="text" id="secret" name="secret" />
 						</div>
 						<div class="style_input">
 							<label for="text">Message <span class="asterix">*</span></label>
-							<textarea name="text"></textarea>
+							<textarea id="text" name="text"></textarea>
 						</div>
 						<div class="style_input style_radio" style="position: relative;">
 							<div class="coon">

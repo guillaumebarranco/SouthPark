@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no">
+
+		<title>South Park : Blindtest</title>
+
 		<link rel="stylesheet" href="css/normalize.css" />
 		<link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -40,19 +43,19 @@
 
 				<ul class="menu_mobile">
 					<li>
-						<a href="index.html">Accueil</a>
+						<i class="fi-home"></i><a href="index.html">Accueil</a>
 					</li>
 					<li>
-						<a href="blindtest.html">Blindtest</a>
+						<i class="fi-trophy"></i><a href="blindtest.html">Blindtest</a>
 					</li>
 					<li>
-						<a href="gallery.html">Gallerie</a>
+						<a href="gallery.html"><i class="fi-eye"></i>Galerie</a>
 					</li>
 					<li>
-						<a href="calendar.html">Calendrier</a>
+						<a href="calendar.html"><i class="fi-calendar"></i>Calendrier</a>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+						<a href="contact.html"><i class="fi-mail"></i>Contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -70,7 +73,7 @@
 
 				<ul class="block_blindtest">
 					<li class="question question1">
-						<h3>1/ Dans quel épisode entend-on "Quand un ami, un jour s'en va" ?</h3>
+						<h3>1/ Dans quel episode entend-on "Quand un ami, un jour s'en va" ?</h3>
 						<div class="timer"></div>
 						<audio src="#"></audio>
 						<button class="button_blindtest wrong_answer">La mort d'Eric Cartman</button>
@@ -78,7 +81,7 @@
 						<button class="button_blindtest wrong_answer">Sauvez Wilzy-X</button>
 					</li>
 					<li class="question question2">
-						<h3>2/ Quel épisode est le théâtre de la chanson du Dog ?</h3>
+						<h3>2/ Quel episode est le theatre de la chanson du Dawg ?</h3>
 						<div class="timer"></div>
 						<audio src="#"></audio>
 						<button class="button_blindtest wrong_answer">Make Love, Not Warcraft</button>
@@ -86,7 +89,7 @@
 						<button class="button_blindtest good_answer">La maîtresse de Ike</button>
 					</li>
 					<li class="question question3">
-						<h3>3/ Dans quel épisode les enfants chantent-ils "Californie" ?</h3>
+						<h3>3/ Dans quel episode les enfants chantent-ils "Californie" ?</h3>
 						<div class="timer"></div>
 						<audio src="#"></audio>
 						<button class="button_blindtest good_answer">La nuit des clochards vivants</button>
@@ -94,7 +97,7 @@
 						<button class="button_blindtest wrong_answer">Cartoon Wars (Partie 2)</button>
 					</li>
 					<li class="question question4">
-						<h3>4/ Quel épisode voit apparaître la fantastique chanson "Poker Face" interprétée par Eric Cartman sur Guitar Hero ?</h3>
+						<h3>4/ Quel episode voit apparaitre la fantastique chanson "Poker Face" interpretee par Eric Cartman sur Guitar Hero ?</h3>
 						<div class="timer"></div>
 						<audio src="#"></audio>
 						<button class="button_blindtest wrong_answer">La cupidité de l'homme rouge</button>
@@ -102,7 +105,7 @@
 						<button class="button_blindtest wrong_answer">Guitare Zéro</button>
 					</li>
 					<li class="question question5">
-						<h3>5/ Dans quel épisode entend-on la chanson de Token qui chante sa solitude ?</h3>
+						<h3>5/ Dans quel episode entend-on la chanson de Token qui chante sa solitude ?</h3>
 						<div class="timer"></div>
 						<audio src="#"></audio>
 						<button class="button_blindtest wrong_answer">La liste</button>
@@ -111,12 +114,24 @@
 					</li>
 				</ul>
 				<div class="what_answer">
-					<img src="" />
+					<img src="img/good_answer.png" alt="Image résultant de la réponse"/>
 				</div>
 
-				
+				<div class="result_blindtest">
+					<p class="blindtest_sentence">
+						Ton score est de <span class="score"></span> sur 5! <br /><br />
+					</p>
 
-				<div class="result_blindtest"></div>
+					<section class="bg">
+						<h2>Envie de continuer a jouer avec South Park ? Allez retrouver les moments forts de la serie  !</h2>
+						<a href="calendar.html" class="go_calendar button_red"><div><i class="fi-calendar"></i></div>Voir le calendrier</a>
+					</section>
+
+					<section class="bg" style="margin-top: 100px;">
+						<a href="index.html" class="go_index button_red"><div><i class="fi-home"></i></div>Retour à l'accueil</a>
+					</section>
+
+				</div>
 			</section>
 		</div>
 
