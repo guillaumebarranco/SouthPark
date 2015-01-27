@@ -72,9 +72,6 @@ $(document).ready(function() {
 		$('.bg_'+color).show();
 	});
 
-	
-
-	
 
 	/*
 	*	BLINDTEST
@@ -87,9 +84,11 @@ $(document).ready(function() {
 		window.score = 0;
 
 		$('.picture_blindtest img').attr('src', 'img/quandunami.jpg');
+		$('.audio_player').trigger('play');
 	});
 
 	$('.block_blindtest .question button').on('click', function() {
+		$('.audio_player').trigger('pause');
 
 		if($(this).parent().hasClass('question5')) { // Si il s'agit de la dernière question
 
@@ -163,13 +162,18 @@ $(document).ready(function() {
 
 				if(window.current_question === 2) {
 					$('.picture_blindtest img').attr('src', 'img/dog.jpg');
+					$('.audio_player').attr('src', 'music/dog.mp3');
 				} else if(window.current_question === 3) {
 					$('.picture_blindtest img').attr('src', 'img/californie.jpg');
+					$('.audio_player').attr('src', 'music/californie.mp3');
 				} else if(window.current_question === 4) {
 					$('.picture_blindtest img').attr('src', 'img/pokerface.jpg');
+					$('.audio_player').attr('src', 'music/pokerface.mp3');
 				} else if(window.current_question === 5) {
 					$('.picture_blindtest img').attr('src', 'img/token.jpg');
+					$('.audio_player').attr('src', 'music/token.mp3');
 				}
+				$('.audio_player').trigger('play');
 
 			}, 2500);
 		}

@@ -124,7 +124,7 @@ $browser-context: 16; // Default
 				text-transform: uppercase;
 				font-size: em(18);
 
-				&:hover {
+				&:active {
 					background-color: darken($green, 15%);
 				}
 			}
@@ -191,18 +191,6 @@ $browser-context: 16; // Default
 			position: relative;
 			font-size: em(20);
 			color: white;
-		}
-	}
-
-	&:hover {
-		background-color: white;
-		color: darken($red_button, 10%);
-
-		div {
-
-			i {
-				color: white;
-			}
 		}
 	}
 }
@@ -387,7 +375,7 @@ a {
 		list-style: none;
 		display: none;
 
-		button  {
+		button {
 			font-family: "Bebas Neue";
 			display: block;
 			@include transition(0.4s);
@@ -401,10 +389,6 @@ a {
 			font-size: em(22);
 			@include box-sizing(border-box);
 			height: 69px;
-
-			&:hover {
-				font-size: em(26);
-			}
 		}
 	}
 }
@@ -420,11 +404,11 @@ a {
 *	GALLERY
 */
 
-
 .div_select_gallery {
-	display: inline-block;
-	vertical-align: top;
-	margin-left: 30px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	width: 300px;
 
 	select {
 		border: solid 2px $red_button;
@@ -432,13 +416,21 @@ a {
 		font-family: "Bebas Neue";
 		letter-spacing: 5px;
 		font-size: em(21);
+		width: 240px;
 	}
 
 	label {
 		font-size: em(18);
 		margin-right: 12px;
+		width: 30px;
+		display: inline-block;
 	}
 }
+
+.center {
+	text-align: center;
+}
+
 .gallery {
 	padding: 0;
 	text-align: center;
@@ -703,10 +695,6 @@ footer {
 	a {
 		color: white;
 		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 
 	.socials {
@@ -716,19 +704,6 @@ footer {
 			list-style: none;
 			display: inline-block;
 			margin: 0;
-
-			a {
-				@include transition(0.2s);
-
-				&:hover {
-					&.facebook {
-						color: #3B5998;
-					}
-					&.twitter {
-						color: #4099FF;
-					}
-				}
-			}
 
 			&.separator {
 				width: 20px;
@@ -847,6 +822,24 @@ footer {
 
 @media screen and(min-width: 1024px) {
 
+	.hide_pc {
+		display: none;
+	}
+
+	.button_red {
+		&:hover {
+			background-color: white;
+			color: darken($red_button, 10%);
+
+			div {
+
+				i {
+					color: white;
+				}
+			}
+		}
+	}
+
 	.menu {
 		padding: 0;
 		width: 1000px;
@@ -902,15 +895,10 @@ footer {
 		max-width: 1024px;
 		margin: 0 auto;
 	}
-	.body_gallery {
-		#container {
-			max-width: 90%;
-		}
-	}
-
-	.gallery li {
-		width: 500px;
-	}
+	
+	/*
+	*	HOME
+	*/
 		
 
 	.device {
@@ -1055,6 +1043,49 @@ footer {
 		}
 	}
 
+	/*
+	*	BLINDTEST
+	*/
+
+	.block_blindtest {
+		li {
+			button  {
+				&:hover {
+					font-size: em(26);
+				}
+			}
+		}
+	}
+
+	/*
+	*	GALLERY
+	*/
+
+	.body_gallery {
+		#container {
+			max-width: 90%;
+		}
+	}
+
+	.gallery li {
+		width: 500px;
+	}
+	
+	.div_select_gallery {
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+		margin: 0 0 0 30px;
+
+		label, select {
+			width: auto;
+		}
+	}
+
+	/*
+	*	CONTACT
+	*/
+
 	$width_contact: 800px;
 
 	form {
@@ -1071,6 +1102,10 @@ footer {
 		width: $width_contact;
 	}
 
+	/*
+	*	CALENDAR
+	*/
+
 	#miniatures {
 		width: 940px;
 		margin: 0 auto;
@@ -1080,6 +1115,31 @@ footer {
 		margin-right: 42px;
 	}
 
+	/*
+	*	FOOTER
+	*/
+
+	footer {
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		.socials {
+			li {
+				a {
+					&:hover {
+						&.twitter {
+							color: #4099FF;
+						}
+						&.facebook {
+							color: #3B5998;
+						}
+					}
+				}
+			}
+		}
+	} 
 	// .date_effect {
 	// 	display: block;
 	// 	position: absolute;
@@ -1096,3 +1156,4 @@ footer {
 	// 	}
 	// }
 }
+// End of Media Query
