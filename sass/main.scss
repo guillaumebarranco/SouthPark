@@ -464,7 +464,7 @@ a {
 }
 
 #miniatures {
-	width: 100%;
+	width: 80%;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -486,10 +486,33 @@ a {
 	margin-bottom: 20px;
 
 	img {
-		width: 80%;
-		border: solid 2px #000;
+		border: solid 3px $green_arrow;
+		width: 100%;
+		@include box-sizing(border-box);
 	}
 
+}
+
+.info_m {
+	color: #fff;
+	background: $green_arrow;
+	@include box-sizing(border-box);
+	padding: 20px;
+	width: 100%;
+	font-family: 'South Park';
+	margin-top: -4px;
+	position: relative;
+}
+
+.info_titre_m {
+	margin-right: 20px;
+}
+
+.info_btn_m img{
+	width: 40px;
+	position: absolute;
+	top: 14px;
+	right: 10px;
 }
 
 #overlay { 
