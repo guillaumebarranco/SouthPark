@@ -476,6 +476,8 @@ a {
 .date_m {
 	display: block;
 	margin-bottom: 20px;
+	overflow: hidden;
+	position: relative;
 
 	img {
 		border: solid 3px $green_arrow;
@@ -500,11 +502,35 @@ a {
 	margin-right: 20px;
 }
 
-.info_btn_m img{
-	width: 40px;
+.info_btn_m {
 	position: absolute;
-	top: 14px;
+	top: 7px;
 	right: 10px;
+	border: solid 2px #fff;
+	@include transition (all ease 0.5s);
+	@include transform (rotate(0deg));
+
+	img {
+		width: 40px;
+		top: 3px;
+		padding: 5px;
+		position: relative;
+	}
+	
+}
+
+.rotate {
+    @include transform (rotate(180deg));
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+
+.detail_m {
+	background: #fff;
+	border: solid 3px $green_arrow;
+	position: relative;
+	display: none;
+	padding: 20px;
+	@include box-sizing(border-box);
 }
 
 #overlay { 

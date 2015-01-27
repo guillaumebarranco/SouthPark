@@ -200,6 +200,20 @@ $(document).ready(function() {
 		}
 	});
 
+
+	/*
+	*	CALENDRIER MOBILE
+	*/
+
+	$('.info_btn_m').on('click', function () {
+    $(this).closest("div").next('.detail_m').slideToggle();
+
+	});
+
+	$('.info_btn_m').on('click', function () {
+		$(this).children('#slide_info_btn').toggleClass("rotate");
+	});
+
 	/*
 	*	CONTACT
 	*/
