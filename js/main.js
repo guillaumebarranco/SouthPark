@@ -35,7 +35,6 @@ $(document).ready(function() {
 
 	}
 
-	
 
 	/*
 	*	HOME
@@ -196,6 +195,29 @@ $(document).ready(function() {
 				$(this).attr('data-id')
 			});
 		}
+	});
+
+
+	/*
+	*	CALENDRIER MOBILE
+	*/
+
+	var extended = 0;
+	var ratio = 1920/1080;
+
+	$('.info_btn_m').off('click');
+	$('.info_btn_m').on('click', function() {
+		if(extended == 0) {
+			$('.detail_m').slideDown();
+			extended = 1;
+		} else {
+			$('.detail_m').slideUp();
+			extended = 0;
+		}
+	});
+
+	$('.info_btn_m').click(function() {
+		$('.info_btn_m img').toggleClass("rotate");
 	});
 
 	/*
