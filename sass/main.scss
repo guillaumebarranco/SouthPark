@@ -448,6 +448,7 @@ a {
 .date {
 	display: none;
 	width: 200px;
+	position: relative;
 	margin-right: 42px;
 	margin-bottom: 50px;
 }
@@ -456,10 +457,15 @@ a {
 	padding: 20px;
 }
 
-.date_m img {
-	width: 100%;
-	border-bottom: solid 2px #000;
+.date_m {
 	display: block;
+	margin-bottom: 20px;
+
+	img {
+		width: 80%;
+		border: solid 2px #000;
+	}
+
 }
 
 #overlay { 
@@ -746,15 +752,17 @@ footer {
 		display: inline-block;
 
 		img{
-			transform-origin: top 0 left 0;
-   			transform: scale(1);
+			@include transform-origin (top 0 left 0);
+   			@include transform (scale(1));
    			@include transition(all ease 0.5s);
    			@include border-radius(100px);
+   			@include filter (grayscale(100%));
 
    			&:hover {
-				transform-origin: top 5px left 5px;
-   				transform: scale(1.15);
+				@include transform-origin (top 5px left 5px);
+   				@include transform (scale(1.15));
    				@include box-shadow(5px 5px 20px 0 #000);
+   				@include filter (grayscale(0));
 			}
 		}
 	}
@@ -976,4 +984,20 @@ footer {
 	.date:nth-child(4n+0) {
 		margin-right: 42px;
 	}
+
+	// .date_effect {
+	// 	display: block;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	@include transition (all ease 0.5s);
+	// 	@include opacity (1);
+	// 	color: #fff;
+	// 	zoom: 0;
+		
+	
+	// 	&:hover {
+	// 		zoom: 100%;
+	// 		@include opacity (0);	
+	// 	}
+	// }
 }
