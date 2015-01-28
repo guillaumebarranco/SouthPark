@@ -490,12 +490,15 @@ a {
 .gallery {
 	padding: 0;
 	text-align: center;
-
+	position: relative;
 
 	li {
 		width: 300px;
 		display: inline-block;
 		@include transition(0.6s);
+		position: relative;
+		top: 0px;
+		left: 0px;
 
 		img {
 			width: 100%;

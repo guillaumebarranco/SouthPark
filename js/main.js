@@ -218,9 +218,30 @@ $(document).ready(function() {
 
 	$('select[name=sort]').change(function() {
 		if($(this).val() === 'nb_persos') {
-			$('.gallery li:visible').each(function() {
-				$(this).attr('data-id');
-			});
+			$('.gallery').css('height', $('.gallery').height() + 'px');
+			$('.gallery li:visible').css('position', 'absolute');
+
+			var left = 124;
+			var top = 0;
+			var data_nb;
+
+			for (var i = 0; i < 20; i++) {
+				$('.gallery li:visible[data-sortperso='+i+']').each(function() {
+					$(this).css('left', left+'px');
+					$(this).css('top', top+'px');
+					left = left + 510;
+					if(left > $('.gallery').height()) {
+						left = 124;
+						top = top + 290;
+					}
+				});
+			}
+
+		} else if($(this).val() === 'none') {
+			$('.gallery').css('height', 'auto');
+			$('.gallery li:visible').css('position', 'relative');
+			$('.gallery li:visible').css('top', '0px');
+			$('.gallery li:visible').css('left', '0px');
 		}
 	});
 
