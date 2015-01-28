@@ -18,19 +18,19 @@ $(document).ready(function() {
 		}
 	});
 
-	if($('#home').length != 0) {
+	if($('#home').length !== 0) {
 		$('.link_home').addClass('link_active');
 
-	} else if($('#blindtest').length != 0) {
+	} else if($('#blindtest').length !== 0) {
 		$('.link_blindtest').addClass('link_active');
 
-	} else if($('#gallery').length != 0) {
+	} else if($('#gallery').length !== 0) {
 		$('.link_gallery').addClass('link_active');
 
-	} else if($('#contact').length != 0) {
+	} else if($('#contact').length !== 0) {
 		$('.link_contact').addClass('link_active');
 
-	} else if($('#calendar').length != 0) {
+	} else if($('#calendar').length !== 0) {
 		$('.link_calendar').addClass('link_active');
 
 	}
@@ -39,12 +39,12 @@ $(document).ready(function() {
 	*	HOME
 	*/
 
-	if($('#home').length != 0 && $(window).width() < 1000) {
+	if($('#home').length !== 0 && $(window).width() < 1000) {
 		$('.device').height(($(window).width() / ratio)+50);
 	}
 
 	$(window).resize(function() {
-		if($('#home').length != 0 && $(window).width() < 1000) {
+		if($('#home').length !== 0 && $(window).width() < 1000) {
 			$('.device').height(($(window).width() / ratio)+50);
 		}
 	});
@@ -90,12 +90,12 @@ $(document).ready(function() {
 	var audio_playing = true;
 
 	$('.pause_player').on('click', function() {
-		if(audio_playing == true) {
+		if(audio_playing === true) {
 			$('.audio_player').trigger('pause');
 			$(this).addClass('play_button');
 			$(this).removeClass('pause_button');
 			audio_playing = false;
-		} else if(audio_playing == false){
+		} else if(audio_playing === false){
 			$('.audio_player').trigger('play');
 			$(this).removeClass('play_button');
 			$(this).addClass('pause_button');

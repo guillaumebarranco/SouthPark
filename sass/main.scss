@@ -872,8 +872,33 @@ footer {
 		position: relative;
 		margin-right: 20px;
 
+
 		&:nth-child(2n+0){
 			margin-right: 0;
+
+		p{
+			position: absolute;
+			color: #fff;
+			top: 45%;
+			font-family: 'South Park';
+			width: 100%;
+			margin: auto;
+			text-align: center;
+			line-height: 1.5;
+		}
+
+		i {
+			font-size: 24px;
+		}
+		
+	
+		&:hover {
+			zoom: 100%;
+			-webkit-transform: scale(0, 0) rotate(360deg);
+			-moz-transform: scale(0, 0) rotate(360deg);
+			-o-transform: scale(0, 0) rotate(360deg);
+			-ms-transform: scale(0, 0) rotate(360deg);
+			transform: scale(0, 0) rotate(360deg);
 		}
 	}
 
