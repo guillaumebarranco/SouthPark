@@ -880,10 +880,9 @@ footer {
 		position: absolute;
 		width: 200px;
 		height: 200px;
-		background-color: #000;
+		background-color: rgba(0,0,0,0.6);
 		@include border-radius (100px);
 		@include transition (all ease 0.5s);
-		opacity: 0.6;
 		@include scale (1);
 		color: #fff;
 		zoom: 0;
@@ -897,7 +896,11 @@ footer {
 			width: 100%;
 			margin: auto;
 			text-align: center;
-			opacity: 1 !important;
+			line-height: 1.5;
+		}
+
+		i {
+			font-size: 24px;
 		}
 		
 	
