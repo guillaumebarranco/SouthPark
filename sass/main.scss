@@ -523,6 +523,10 @@ a {
 	position: relative;
 	margin-right: 42px;
 	margin-bottom: 50px;
+
+	img {
+		@include border-radius(100px);
+	}
 }
 
 #intro_calendar p {
