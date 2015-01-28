@@ -533,66 +533,6 @@ a {
 	padding: 20px;
 }
 
-.date_m {
-	display: block;
-	margin-bottom: 20px;
-	overflow: hidden;
-	position: relative;
-
-	img {
-		border: solid 3px $green_arrow;
-		width: 100%;
-		@include box-sizing(border-box);
-	}
-
-}
-
-.info_m {
-	color: #fff;
-	background: $green_arrow;
-	@include box-sizing(border-box);
-	padding: 20px;
-	width: 100%;
-	font-family: 'South Park';
-	margin-top: -4px;
-	position: relative;
-}
-
-.info_titre_m {
-	margin-right: 20px;
-}
-
-.info_btn_m {
-	position: absolute;
-	top: 7px;
-	right: 10px;
-	border: solid 2px #fff;
-	@include transition (all ease 0.5s);
-	@include transform (rotate(0deg));
-
-	img {
-		width: 40px;
-		top: 3px;
-		padding: 5px;
-		position: relative;
-	}
-	
-}
-
-.rotate {
-    @include transform (rotate(180deg));
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
-}
-
-.detail_m {
-	background: #fff;
-	border: solid 3px $green_arrow;
-	position: relative;
-	display: none;
-	padding: 20px;
-	@include box-sizing(border-box);
-}
-
 #overlay { 
 	display: none; 
 	background-color: #000;
@@ -666,6 +606,71 @@ img.btn_close {
 	float: right;
 	margin: -55px -55px 0 0;
 }
+
+	.date_m {
+		display: block;
+		margin-bottom: 20px;
+		overflow: hidden;
+		position: relative;
+
+		img {
+			border: solid 3px $green_arrow;
+			width: 100%;
+			@include box-sizing(border-box);
+		}
+
+	}
+
+	.info_m {
+		color: #fff;
+		background: $green_arrow;
+		@include box-sizing(border-box);
+		padding: 20px;
+		width: 100%;
+		font-family: 'South Park';
+		margin-top: -4px;
+		position: relative;
+	}
+
+	.info_titre_m {
+		margin-right: 20px;
+	}
+
+	.info_btn_m {
+		position: absolute;
+		top: 7px;
+		right: 10px;
+		border: solid 2px #fff;
+		@include transition (all ease 0.5s);
+		@include transform (rotate(0deg));
+
+		img {
+			width: 40px;
+			top: 3px;
+			padding: 5px;
+			position: relative;
+		}
+		
+	}
+
+	.rotate {
+	    @include transform (rotate(180deg));
+	    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+	}
+
+	.detail_m {
+		background: #fff;
+		border: solid 3px $green_arrow;
+		position: relative;
+		display: none;
+		padding: 20px;
+		// text-align: left;
+		@include box-sizing(border-box);
+
+		h3 {
+			margin-bottom: 5px;
+		}
+	}
 
 /*
 *	CONTACT
@@ -859,49 +864,20 @@ footer {
 		width: 640px;
 	}
 
-
-	.date {
-		display: inline-block;
-	}
-
-	.date_effect {
-		display: block;
-		position: absolute;
-		width: 200px;
-		height: 200px;
-		background-color: rgba(0,0,0,0.6);
-		@include border-radius (100px);
-		@include transition (all ease 0.5s);
-		@include scale (1);
-		color: #fff;
-		zoom: 0;
-		overflow: hidden;
-
-		p{
-			position: absolute;
-			color: #fff;
-			top: 45%;
-			font-family: 'South Park';
-			width: 100%;
-			margin: auto;
-			text-align: center;
-			line-height: 1.5;
-		}
-
-		i {
-			font-size: 24px;
-		}
-		
-	
-		&:hover {
-			zoom: 100%;
-			@include scale (0);	
-		}
-	}
-
 	.date_m {
-		display: none;
+		display: inline-block;
+		margin-bottom: 20px;
+		width: 300px;
+		overflow: hidden;
+		position: relative;
+		margin-right: 20px;
+
+		&:nth-child(2n+0){
+			margin-right: 0;
+		}
 	}
+
+
 }
 
 @media screen and(min-width: 1024px) {
@@ -978,6 +954,41 @@ footer {
 	#container {
 		max-width: 1024px;
 		margin: 0 auto;
+	}
+
+	.date_effect {
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background-color: rgba(0,0,0,0.6);
+		@include border-radius (100px);
+		@include transition (all ease 0.5s);
+		@include scale (1);
+		color: #fff;
+		zoom: 0;
+		overflow: hidden;
+
+		p{
+			position: absolute;
+			color: #fff;
+			top: 45%;
+			font-family: 'South Park';
+			width: 100%;
+			margin: auto;
+			text-align: center;
+			line-height: 1.5;
+		}
+
+		i {
+			font-size: 24px;
+		}
+		
+	
+		&:hover {
+			zoom: 100%;
+			@include scale (0);	
+		}
 	}
 	
 	/*
@@ -1212,6 +1223,15 @@ footer {
 		margin-right: 42px;
 	}
 
+	.date_m {
+		display: none;
+	}
+
+
+	.date {
+		display: inline-block;
+	}
+
 	/*
 	*	FOOTER
 	*/
@@ -1237,5 +1257,6 @@ footer {
 			}
 		}
 	} 
+
 }
 // End of Media Query
