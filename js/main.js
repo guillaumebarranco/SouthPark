@@ -105,6 +105,7 @@ $(document).ready(function() {
 
 	$('.block_blindtest .question button').on('click', function() {
 		$('.audio_player').trigger('pause');
+		$(this).removeClass('play_button');
 
 		if($(this).parent().hasClass('question5')) { // Si il s'agit de la dernière question
 
@@ -122,6 +123,9 @@ $(document).ready(function() {
 			}
 
 			setTimeout(function() {
+				$('.pause_player').removeClass('play_button');
+				$('.pause_player').addClass('pause_button');
+				audio_playing = true;
 				$('.what_answer').hide();
 				$('.what_answer img').attr('src', '');
 				$('.block_blindtest .question'+window.current_question).hide();
@@ -170,6 +174,9 @@ $(document).ready(function() {
 			}
 
 			setTimeout(function() {
+				$('.pause_player').removeClass('play_button');
+				$('.pause_player').addClass('pause_button');
+				audio_playing = true;
 				$('.what_answer').hide();
 				$('.what_answer img').attr('src', '');
 				$('.block_blindtest .question'+window.current_question).hide();
@@ -304,7 +311,7 @@ $(document).ready(function() {
 	$('body').on('click', 'a.close, #overlay', function() {
 		$('#overlay , .popup').fadeOut(function() {
 			$('#overlay, a.close').remove();  
-	});
+		});
 		
 		return false;
 	});

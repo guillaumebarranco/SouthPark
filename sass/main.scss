@@ -1161,7 +1161,7 @@ footer {
 		
 		img{
 			@include scale (1);
-			@include transition (all ease 0.5s);
+			@include transition (all ease 0.2s);
 			position: relative;
 
 			&:hover {
