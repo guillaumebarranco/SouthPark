@@ -803,21 +803,69 @@ footer {
 	.date {
 		display: inline-block;
 
-		img{
-			@include transform-origin (top 0 left 0);
-   			@include transform (scale(1));
-   			@include transition(all ease 0.5s);
-   			@include border-radius(100px);
-   			@include filter (grayscale(100%));
+		// img{
+		// 	@include transform-origin (top 0 left 0);
+  //  			@include transform (scale(1));
+  //  			@include transition(all ease 0.5s);
+  //  			@include border-radius(100px);
+  //  			@include filter (grayscale(100%));
 
-   			&:hover {
-				@include transform-origin (top 5px left 5px);
-   				@include transform (scale(1.15));
-   				@include box-shadow(5px 5px 20px 0 #000);
-   				@include filter (grayscale(0));
-			}
+  //  			&:hover {
+		// 		@include transform-origin (top 5px left 5px);
+  //  				@include transform (scale(1.15));
+  //  				@include box-shadow(5px 5px 20px 0 #000);
+  //  				@include filter (grayscale(0));
+		// 	}
+		// }
+	}
+
+	.date_effect {
+		display: block;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background-color: #000;
+		@include border-radius (100px);
+		@include transition (all ease 0.5s);
+		opacity: 0.6;
+		@include scale (1);
+		color: #fff;
+		zoom: 0;
+		overflow: hidden;
+
+		p{
+			position: absolute;
+			color: #fff;
+			top: 45%;
+			font-family: 'South Park';
+			width: 100%;
+			margin: auto;
+			text-align: center;
+			opacity: 1 !important;
+		}
+		
+	
+		&:hover {
+			zoom: 100%;
+			@include scale (0);	
 		}
 	}
+
+	// // .txt_effect {
+	// // 	// zoom: 0;
+	// // 	// padding: 95px 0 95px 0;
+	// // 	// @include transition (all ease 0.5s);
+	// // 	// @include opacity (1);
+	// // 	// @include scale (1);
+
+	// // 	// &:hover {
+	// // 	// 	padding: 0;
+	// // 	// 	@include opacity (0);
+	// // 	// 	@include scale (0);
+	// // 	// }
+	// }
+
+
 
 	.date_m {
 		display: none;
@@ -1144,20 +1192,5 @@ footer {
 			}
 		}
 	} 
-	// .date_effect {
-	// 	display: block;
-	// 	position: absolute;
-	// 	top: 0;
-	// 	@include transition (all ease 0.5s);
-	// 	@include opacity (1);
-	// 	color: #fff;
-	// 	zoom: 0;
-		
-	
-	// 	&:hover {
-	// 		zoom: 100%;
-	// 		@include opacity (0);	
-	// 	}
-	// }
 }
 // End of Media Query
