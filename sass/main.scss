@@ -858,21 +858,6 @@ footer {
 
 	.date {
 		display: inline-block;
-
-		// img{
-		// 	@include transform-origin (top 0 left 0);
-  //  			@include transform (scale(1));
-  //  			@include transition(all ease 0.5s);
-  //  			@include border-radius(100px);
-  //  			@include filter (grayscale(100%));
-
-  //  			&:hover {
-		// 		@include transform-origin (top 5px left 5px);
-  //  				@include transform (scale(1.15));
-  //  				@include box-shadow(5px 5px 20px 0 #000);
-  //  				@include filter (grayscale(0));
-		// 	}
-		// }
 	}
 
 	.date_effect {
@@ -909,22 +894,6 @@ footer {
 			@include scale (0);	
 		}
 	}
-
-	// // .txt_effect {
-	// // 	// zoom: 0;
-	// // 	// padding: 95px 0 95px 0;
-	// // 	// @include transition (all ease 0.5s);
-	// // 	// @include opacity (1);
-	// // 	// @include scale (1);
-
-	// // 	// &:hover {
-	// // 	// 	padding: 0;
-	// // 	// 	@include opacity (0);
-	// // 	// 	@include scale (0);
-	// // 	// }
-	// }
-
-
 
 	.date_m {
 		display: none;
@@ -1180,6 +1149,19 @@ footer {
 
 	.gallery li {
 		width: 500px;
+		z-index: 0;
+		
+		img{
+			@include scale (1);
+			@include transition (all ease 0.5s);
+			position: relative;
+
+			&:hover {
+				@include scale (1.02);
+				@include box-shadow(5px 5px 20px 0 #000);
+				z-index: 1;
+			}
+		}
 	}
 	
 	.div_select_gallery {
