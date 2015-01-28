@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 	$('.traits').off('click');
 	$('.traits').on('click', function() {
-		if(extended == 0) {
+		if(extended === 0) {
 			$('#navigation .menu_mobile').slideDown();
 			extended = 1;
 		} else {
@@ -83,7 +83,24 @@ $(document).ready(function() {
 		window.score = 0;
 
 		$('.picture_blindtest img').attr('src', 'img/quandunami.jpg');
+		$('.pause_player').show();
 		$('.audio_player').trigger('play');
+	});
+
+	var audio_playing = true;
+
+	$('.pause_player').on('click', function() {
+		if(audio_playing == true) {
+			$('.audio_player').trigger('pause');
+			$(this).addClass('play_button');
+			$(this).removeClass('pause_button');
+			audio_playing = false;
+		} else if(audio_playing == false){
+			$('.audio_player').trigger('play');
+			$(this).removeClass('play_button');
+			$(this).addClass('pause_button');
+			audio_playing = true;
+		}
 	});
 
 	$('.block_blindtest .question button').on('click', function() {
@@ -195,7 +212,7 @@ $(document).ready(function() {
 	$('select[name=sort]').change(function() {
 		if($(this).val() === 'nb_persos') {
 			$('.gallery li:visible').each(function() {
-				$(this).attr('data-id')
+				$(this).attr('data-id');
 			});
 		}
 	});
