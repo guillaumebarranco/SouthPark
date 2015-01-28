@@ -895,7 +895,11 @@ footer {
 	
 		&:hover {
 			zoom: 100%;
-			@include scale (0);	
+			-webkit-transform: scale(0, 0) rotate(360deg);
+			-moz-transform: scale(0, 0) rotate(360deg);
+			-o-transform: scale(0, 0) rotate(360deg);
+			-ms-transform: scale(0, 0) rotate(360deg);
+			transform: scale(0, 0) rotate(360deg);
 		}
 	}
 
