@@ -30,6 +30,10 @@ h1, h2, h3 {
 	color: #000;
 }
 
+p {
+	line-height: 1.5em;
+}
+
 h2 {
 	line-height: em(25);
 }
@@ -1103,6 +1107,10 @@ footer {
 						position: relative;
 						top: -100px;
 						left: 20px;
+
+						li{
+							margin-bottom: 5px;
+						}
 					}
 				}
 
@@ -1190,10 +1198,11 @@ footer {
 		display: inline-block;
 		vertical-align: top;
 		width: auto;
-		margin: 0 0 0 30px;
+		margin: 50px 0 50px 73px;
 
 		label, select {
 			width: auto;
+			outline: none;
 		}
 	}
 
