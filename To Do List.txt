@@ -1,8 +1,0 @@
-- Intégrer un player vidéo responsive sur une page (probablement la page accueil) 
-avec le générique de South Park.
-
-- Vérifier que tout est beau et tout marche bien sur mobile
-
-- Lancer une tâche grunt et lié les fichiers css et js minifiés (une fois tout totalement fini).
-
-- Trouver la dernière musique du blindtest

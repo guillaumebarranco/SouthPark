@@ -1,25 +1,25 @@
 module.exports = function(grunt) {
 
 	grunt.initConfig({
-		jshint: {
-			all: ['js/main.js'],
-		},
+		// jshint: {
+		// 	all: ['js/main.js'],
+		// },
 
 		uglify: {
 			my_target: {
 				files: {
-					'js/dest/min.js': ['js/main.js']
+					'js/main.min.js': ['js/main.js']
 				}
 			}
 		},
 		cssmin: {
 			target: {
 				files: {
-					'css/dest/min.css': ['css/normalize.css', 'css/idangerous.swiper.css', 'css/main.css']
+					'css/min.css': ['css/normalize.css', 'css/main.css']
 				}
 			}
 		},
-		imagemin: {
+		/*imagemin: {
 			dynamic: {                         // Another target
 				files: [{
 					expand: true,                  // Enable dynamic expansion
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 					dest: 'img/min/'                  // Destination path prefix
 				}]
 			}
-		}
+		}*/
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -36,5 +36,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-	grunt.registerTask('default', ['jshint', 'uglify', 'cssmin', 'imagemin']);
+	grunt.registerTask('default', ['uglify', 'cssmin']);
 }

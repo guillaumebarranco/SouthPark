@@ -57,7 +57,7 @@ $(document).ready(function() {
 				$('.persos').css('border-color', border);
 				$('.choose_perso li').css('border-color', border);
 
-				$('.bg_'+color).show()
+				$('.bg_'+color).show();
 			}
 		}
 	});
@@ -256,7 +256,7 @@ $(document).ready(function() {
 				height_picture = 180;
 			} else {
 				width_picture = 510;
-				height_picture = 290
+				height_picture = 290;
 			}
 
 			var left = 120;
@@ -278,8 +278,8 @@ $(document).ready(function() {
 				}
 
 			} else if($(this).val() === 'nb_persos_decroissant') {
-				for (var c = 20; c > 0; c--) {
-					$('.gallery li:visible[data-sortperso='+c+']').each(function() {
+				for (var d = 20; d > 0; d--) {
+					$('.gallery li:visible[data-sortperso='+d+']').each(function() {
 						
 						$(this).css('left', left+'px');
 						$(this).css('top', top+'px');
