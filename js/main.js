@@ -205,6 +205,8 @@ $(document).ready(function() {
 	/*
 	*	GALLERY
 	*/
+
+	// Gestion des Filtres de la Galerie
 	
 	$('select[name=filter]').change(function() {
 		$('.gallery li').hide();
@@ -216,35 +218,67 @@ $(document).ready(function() {
 		
 	});
 
+	// Gestion des Tris de la Galerie
+
 	$('select[name=sort]').change(function() {
-		if($(this).val() === 'nb_persos') {
-			$('.gallery').css('height', $('.gallery').height() + 'px');
-			$('.gallery li:visible').css('position', 'absolute');
 
-			var left = 124;
-			var top = 0;
-			var data_nb;
-
-			for (var i = 0; i < 20; i++) {
-				$('.gallery li:visible[data-sortperso='+i+']').each(function() {
-					$(this).css('left', left+'px');
-					$(this).css('top', top+'px');
-					left = left + 510;
-					if(left > $('.gallery').height()) {
-						left = 124;
-						top = top + 290;
-					}
-				});
-			}
-
-		} else if($(this).val() === 'none') {
+		if($(this).val() === 'none') {
 			$('.gallery').css('height', 'auto');
+			$('.gallery').css('width', 'auto');
 			$('.gallery li:visible').css('position', 'relative');
 			$('.gallery li:visible').css('top', '0px');
 			$('.gallery li:visible').css('left', '0px');
+
+		} else {
+
+			var i = 0;
+
+			$('.gallery').css('height', $('.gallery').height() + 'px');
+			$('.gallery').css('width', $('.gallery').width() + 'px');
+			$('.gallery li:visible').css('position', 'absolute');
+
+			if($(window).width() < 1020) {
+				width_picture = 310;
+				height_picture = 180;
+			} else {
+				width_picture = 510;
+				height_picture = 290
+			}
+
+			var left = 120;
+			var top = 0;
+			var data_nb;
+
+			if($(this).val() === 'nb_persos_croissant') {
+				for (var c = 0; c < 20; c++) {
+					$('.gallery li:visible[data-sortperso='+c+']').each(function() {
+						
+						$(this).css('left', left+'px');
+						$(this).css('top', top+'px');
+						left = left + width_picture;
+						if(left > ($('.gallery').width() - (width_picture-30))) {
+							left = 120;
+							top = top + height_picture;
+						}
+					});
+				}
+
+			} else if($(this).val() === 'nb_persos_decroissant') {
+				for (var c = 20; c > 0; c--) {
+					$('.gallery li:visible[data-sortperso='+c+']').each(function() {
+						
+						$(this).css('left', left+'px');
+						$(this).css('top', top+'px');
+						left = left + width_picture;
+						if(left > ($('.gallery').width() - (width_picture-30))) {
+							left = 120;
+							top = top + height_picture;
+						}
+					});
+				}
+			}
 		}
 	});
-
 
 	/*
 	*	CALENDRIER MOBILE
