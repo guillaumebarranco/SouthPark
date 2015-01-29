@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 /* line 33, ../sass/main.scss */
-h1 h2 {
+h1, h2 {
   line-height: 1.5em;
 }
 
@@ -958,7 +958,7 @@ footer .socials li i {
 }
 @media screen and (min-width: 1024px) {
   /* line 899, ../sass/main.scss */
-  h1 h2 {
+  h1, h2 {
     line-height: 1;
   }
 

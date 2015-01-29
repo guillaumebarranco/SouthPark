@@ -30,7 +30,7 @@ h1, h2, h3 {
 	color: #000;
 }
 
-h1 h2 {
+h1, h2 {
 	line-height: 1.5em;
 }
 
@@ -896,7 +896,7 @@ footer {
 
 @media screen and(min-width: 1024px) {
 
-	h1 h2 {
+	h1, h2 {
 	line-height: 1;
 	}
 
