@@ -324,7 +324,7 @@ a {
 	&.bg_yellow {
 		background-color: $yellow;
 		margin-top: 50px;
-		margin-bottom: 30px;
+		margin-bottom: 0px;
 
 		.yellow_picture {
 			float: left;
@@ -1053,6 +1053,7 @@ footer {
 	.bg {
 		&.bg_yellow {
 			background: none;
+			margin-bottom: 40px;
 
 			.yellow_picture {
 				display: none;

@@ -330,7 +330,7 @@ a.button_red {
 .bg.bg_yellow {
   background-color: #f1dc0d;
   margin-top: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 /* line 329, ../sass/main.scss */
 .bg.bg_yellow .yellow_picture {
@@ -1124,25 +1124,26 @@ footer .socials li i {
   /* line 1054, ../sass/main.scss */
   .bg.bg_yellow {
     background: none;
+    margin-bottom: 40px;
   }
-  /* line 1057, ../sass/main.scss */
+  /* line 1058, ../sass/main.scss */
   .bg.bg_yellow .yellow_picture {
     display: none;
   }
-  /* line 1061, ../sass/main.scss */
+  /* line 1062, ../sass/main.scss */
   .bg.bg_video {
     max-width: 600px;
     margin: 0 auto;
   }
 
-  /* line 1067, ../sass/main.scss */
+  /* line 1068, ../sass/main.scss */
   .persos {
     width: 940px;
     margin: 0 auto;
     height: 550px;
     border: solid 2px #4a6398;
   }
-  /* line 1073, ../sass/main.scss */
+  /* line 1074, ../sass/main.scss */
   .persos .choose_perso {
     height: 64px;
     padding: 0;
@@ -1150,7 +1151,7 @@ footer .socials li i {
     font-size: 0;
     display: block;
   }
-  /* line 1080, ../sass/main.scss */
+  /* line 1081, ../sass/main.scss */
   .persos .choose_perso li {
     list-style: none;
     display: inline-block;
@@ -1169,27 +1170,27 @@ footer .socials li i {
     cursor: pointer;
     border-bottom: solid 5px #4a6398;
   }
-  /* line 1096, ../sass/main.scss */
+  /* line 1097, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_blue {
     background-color: #4a6398;
   }
-  /* line 1099, ../sass/main.scss */
+  /* line 1100, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_red {
     background-color: #c50a36;
   }
-  /* line 1102, ../sass/main.scss */
+  /* line 1103, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_green {
     background-color: #1fb22c;
   }
-  /* line 1105, ../sass/main.scss */
+  /* line 1106, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_orange {
     background-color: #da5a00;
   }
-  /* line 1111, ../sass/main.scss */
+  /* line 1112, ../sass/main.scss */
   .persos h2 {
     display: none;
   }
-  /* line 1116, ../sass/main.scss */
+  /* line 1117, ../sass/main.scss */
   .persos .bg.bg_perso {
     position: absolute;
     height: 382px;
@@ -1198,48 +1199,48 @@ footer .socials li i {
     display: none;
     margin-top: 20px;
   }
-  /* line 1125, ../sass/main.scss */
+  /* line 1126, ../sass/main.scss */
   .persos .bg.bg_perso .tastes .like, .persos .bg.bg_perso .tastes .dislike {
     position: relative;
     top: -100px;
     left: 20px;
   }
-  /* line 1130, ../sass/main.scss */
+  /* line 1131, ../sass/main.scss */
   .persos .bg.bg_perso .tastes .like li, .persos .bg.bg_perso .tastes .dislike li {
     margin-bottom: 5px;
   }
-  /* line 1136, ../sass/main.scss */
+  /* line 1137, ../sass/main.scss */
   .persos .bg.bg_perso .bg_picture {
     left: 0;
     margin-top: 30px;
   }
-  /* line 1140, ../sass/main.scss */
+  /* line 1141, ../sass/main.scss */
   .persos .bg.bg_perso .bg_picture img {
     height: 300px;
   }
-  /* line 1144, ../sass/main.scss */
+  /* line 1145, ../sass/main.scss */
   .persos .bg.bg_perso .text_perso {
     left: 30px;
     text-align: left;
     width: 550px;
   }
-  /* line 1150, ../sass/main.scss */
+  /* line 1151, ../sass/main.scss */
   .persos .bg.bg_perso.bg_blue {
     display: block;
   }
-  /* line 1152, ../sass/main.scss */
+  /* line 1153, ../sass/main.scss */
   .persos .bg.bg_perso.bg_blue h3 {
     color: #4a6398;
   }
-  /* line 1157, ../sass/main.scss */
+  /* line 1158, ../sass/main.scss */
   .persos .bg.bg_perso.bg_red h3 {
     color: #c50a36;
   }
-  /* line 1162, ../sass/main.scss */
+  /* line 1163, ../sass/main.scss */
   .persos .bg.bg_perso.bg_green h3 {
     color: #1fb22c;
   }
-  /* line 1167, ../sass/main.scss */
+  /* line 1168, ../sass/main.scss */
   .persos .bg.bg_perso.bg_orange h3 {
     color: #da5a00;
   }
@@ -1247,7 +1248,7 @@ footer .socials li i {
   /*
   *	BLINDTEST
   */
-  /* line 1182, ../sass/main.scss */
+  /* line 1183, ../sass/main.scss */
   .block_blindtest li button:hover {
     font-size: 1.625em;
   }
@@ -1255,17 +1256,17 @@ footer .socials li i {
   /*
   *	GALLERY
   */
-  /* line 1194, ../sass/main.scss */
+  /* line 1195, ../sass/main.scss */
   .body_gallery #container {
     max-width: 90%;
   }
 
-  /* line 1199, ../sass/main.scss */
+  /* line 1200, ../sass/main.scss */
   .gallery li {
     width: 500px;
     z-index: 0;
   }
-  /* line 1203, ../sass/main.scss */
+  /* line 1204, ../sass/main.scss */
   .gallery li img {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -1277,7 +1278,7 @@ footer .socials li i {
     transition: all 0.2s ease;
     position: relative;
   }
-  /* line 1208, ../sass/main.scss */
+  /* line 1209, ../sass/main.scss */
   .gallery li img:hover {
     -moz-transform: scale(1.02, 1.02);
     -ms-transform: scale(1.02, 1.02);
@@ -1289,14 +1290,14 @@ footer .socials li i {
     z-index: 1;
   }
 
-  /* line 1216, ../sass/main.scss */
+  /* line 1217, ../sass/main.scss */
   .div_select_gallery {
     display: inline-block;
     vertical-align: top;
     width: auto;
     margin: 50px 0 50px 73px;
   }
-  /* line 1222, ../sass/main.scss */
+  /* line 1223, ../sass/main.scss */
   .div_select_gallery label, .div_select_gallery select {
     width: auto;
     outline: none;
@@ -1305,16 +1306,16 @@ footer .socials li i {
   /*
   *	CONTACT
   */
-  /* line 1234, ../sass/main.scss */
+  /* line 1235, ../sass/main.scss */
   form {
     width: 800px;
   }
-  /* line 1238, ../sass/main.scss */
+  /* line 1239, ../sass/main.scss */
   form .style_input input[type=text], form .style_input textarea {
     width: 800px;
   }
 
-  /* line 1244, ../sass/main.scss */
+  /* line 1245, ../sass/main.scss */
   .div_letter {
     width: 800px;
   }
@@ -1322,23 +1323,23 @@ footer .socials li i {
   /*
   *	CALENDAR
   */
-  /* line 1252, ../sass/main.scss */
+  /* line 1253, ../sass/main.scss */
   #miniatures {
     width: 940px;
     margin: 0 auto;
   }
 
-  /* line 1257, ../sass/main.scss */
+  /* line 1258, ../sass/main.scss */
   .date:nth-child(4n+0) {
     margin-right: 42px;
   }
 
-  /* line 1261, ../sass/main.scss */
+  /* line 1262, ../sass/main.scss */
   .date_m {
     display: none;
   }
 
-  /* line 1266, ../sass/main.scss */
+  /* line 1267, ../sass/main.scss */
   .date {
     display: inline-block;
   }
@@ -1346,15 +1347,15 @@ footer .socials li i {
   /*
   *	FOOTER
   */
-  /* line 1276, ../sass/main.scss */
+  /* line 1277, ../sass/main.scss */
   footer a:hover {
     text-decoration: underline;
   }
-  /* line 1284, ../sass/main.scss */
+  /* line 1285, ../sass/main.scss */
   footer .socials li a:hover.twitter {
     color: #4099FF;
   }
-  /* line 1287, ../sass/main.scss */
+  /* line 1288, ../sass/main.scss */
   footer .socials li a:hover.facebook {
     color: #3B5998;
   }
