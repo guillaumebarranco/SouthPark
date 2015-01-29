@@ -439,12 +439,12 @@ a.button_red {
 
 /* line 420, ../sass/main.scss */
 .pause_player {
-  position: absolute;
   cursor: pointer;
-  top: 550px;
-  left: 200px;
   background-repeat: no-repeat;
   width: 70px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 20px;
   height: 70px;
   -moz-border-radius: 70px;
   -webkit-border-radius: 70px;
@@ -1253,20 +1253,27 @@ footer .socials li i {
     font-size: 1.625em;
   }
 
+  /* line 1190, ../sass/main.scss */
+  .pause_player {
+    position: absolute;
+    top: 550px;
+    left: 200px;
+  }
+
   /*
   *	GALLERY
   */
-  /* line 1195, ../sass/main.scss */
+  /* line 1201, ../sass/main.scss */
   .body_gallery #container {
     max-width: 90%;
   }
 
-  /* line 1200, ../sass/main.scss */
+  /* line 1206, ../sass/main.scss */
   .gallery li {
     width: 500px;
     z-index: 0;
   }
-  /* line 1204, ../sass/main.scss */
+  /* line 1210, ../sass/main.scss */
   .gallery li img {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -1278,7 +1285,7 @@ footer .socials li i {
     transition: all 0.2s ease;
     position: relative;
   }
-  /* line 1209, ../sass/main.scss */
+  /* line 1215, ../sass/main.scss */
   .gallery li img:hover {
     -moz-transform: scale(1.02, 1.02);
     -ms-transform: scale(1.02, 1.02);
@@ -1290,14 +1297,14 @@ footer .socials li i {
     z-index: 1;
   }
 
-  /* line 1217, ../sass/main.scss */
+  /* line 1223, ../sass/main.scss */
   .div_select_gallery {
     display: inline-block;
     vertical-align: top;
     width: auto;
     margin: 50px 0 50px 73px;
   }
-  /* line 1223, ../sass/main.scss */
+  /* line 1229, ../sass/main.scss */
   .div_select_gallery label, .div_select_gallery select {
     width: auto;
     outline: none;
@@ -1306,16 +1313,16 @@ footer .socials li i {
   /*
   *	CONTACT
   */
-  /* line 1235, ../sass/main.scss */
+  /* line 1241, ../sass/main.scss */
   form {
     width: 800px;
   }
-  /* line 1239, ../sass/main.scss */
+  /* line 1245, ../sass/main.scss */
   form .style_input input[type=text], form .style_input textarea {
     width: 800px;
   }
 
-  /* line 1245, ../sass/main.scss */
+  /* line 1251, ../sass/main.scss */
   .div_letter {
     width: 800px;
   }
@@ -1323,23 +1330,23 @@ footer .socials li i {
   /*
   *	CALENDAR
   */
-  /* line 1253, ../sass/main.scss */
+  /* line 1259, ../sass/main.scss */
   #miniatures {
     width: 940px;
     margin: 0 auto;
   }
 
-  /* line 1258, ../sass/main.scss */
+  /* line 1264, ../sass/main.scss */
   .date:nth-child(4n+0) {
     margin-right: 42px;
   }
 
-  /* line 1262, ../sass/main.scss */
+  /* line 1268, ../sass/main.scss */
   .date_m {
     display: none;
   }
 
-  /* line 1267, ../sass/main.scss */
+  /* line 1273, ../sass/main.scss */
   .date {
     display: inline-block;
   }
@@ -1347,15 +1354,15 @@ footer .socials li i {
   /*
   *	FOOTER
   */
-  /* line 1277, ../sass/main.scss */
+  /* line 1283, ../sass/main.scss */
   footer a:hover {
     text-decoration: underline;
   }
-  /* line 1285, ../sass/main.scss */
+  /* line 1291, ../sass/main.scss */
   footer .socials li a:hover.twitter {
     color: #4099FF;
   }
-  /* line 1288, ../sass/main.scss */
+  /* line 1294, ../sass/main.scss */
   footer .socials li a:hover.facebook {
     color: #3B5998;
   }

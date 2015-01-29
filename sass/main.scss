@@ -418,12 +418,12 @@ a {
 
 
 .pause_player {
-	position: absolute;
 	cursor: pointer;
-	top: 550px;
-	left: 200px;
 	background-repeat: no-repeat;
 	width: 70px;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 20px;
 	height: 70px;
 	@include border-radius(70px);
 	@include transition(0.2s);
@@ -1185,6 +1185,12 @@ footer {
 				}
 			}
 		}
+	}
+
+	.pause_player {
+		position: absolute;
+		top: 550px;
+		left: 200px;
 	}
 
 	/*
