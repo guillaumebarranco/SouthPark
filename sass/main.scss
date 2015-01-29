@@ -30,6 +30,10 @@ h1, h2, h3 {
 	color: #000;
 }
 
+h1 {
+	line-height: 1.5em;
+}
+
 p {
 	line-height: 1.5em;
 }
@@ -119,7 +123,7 @@ $browser-context: 16; // Default
 				color: white;
 				position: absolute;
 				top: 20px;
-				left: 126px;
+				left: 55px;
 			}
 
 			a {
@@ -889,6 +893,10 @@ footer {
 
 @media screen and(min-width: 1024px) {
 
+	h1 {
+	line-height: 1;
+	}
+
 	.hide_pc {
 		display: none;
 	}
@@ -943,6 +951,10 @@ footer {
 	}
 	.menu_mobile, .traits {
 		display: none !important;
+	}
+
+	.menu_mobile li i {
+		left: 126px;
 	}
 
 	#navigation {
@@ -1052,7 +1064,7 @@ footer {
 	.persos {
 		width: 940px;
 		margin: 0 auto;
-		height: 530px;
+		height: 550px;
 		border: solid 2px $blue;
 
 		.choose_perso {
