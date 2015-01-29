@@ -1043,6 +1043,10 @@ footer {
 				display: none;
 			}
 		}
+		&.bg_video {
+			max-width: 600px;
+			margin: 0 auto;
+		}
 	}
 
 	.persos {

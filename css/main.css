@@ -1111,15 +1111,20 @@ footer .socials li i {
   .bg.bg_yellow .yellow_picture {
     display: none;
   }
+  /* line 1046, ../sass/main.scss */
+  .bg.bg_video {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-  /* line 1048, ../sass/main.scss */
+  /* line 1052, ../sass/main.scss */
   .persos {
     width: 940px;
     margin: 0 auto;
     height: 530px;
     border: solid 2px #4a6398;
   }
-  /* line 1054, ../sass/main.scss */
+  /* line 1058, ../sass/main.scss */
   .persos .choose_perso {
     height: 64px;
     padding: 0;
@@ -1127,7 +1132,7 @@ footer .socials li i {
     font-size: 0;
     display: block;
   }
-  /* line 1061, ../sass/main.scss */
+  /* line 1065, ../sass/main.scss */
   .persos .choose_perso li {
     list-style: none;
     display: inline-block;
@@ -1146,27 +1151,27 @@ footer .socials li i {
     cursor: pointer;
     border-bottom: solid 5px #4a6398;
   }
-  /* line 1077, ../sass/main.scss */
+  /* line 1081, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_blue {
     background-color: #4a6398;
   }
-  /* line 1080, ../sass/main.scss */
+  /* line 1084, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_red {
     background-color: #c50a36;
   }
-  /* line 1083, ../sass/main.scss */
+  /* line 1087, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_green {
     background-color: #1fb22c;
   }
-  /* line 1086, ../sass/main.scss */
+  /* line 1090, ../sass/main.scss */
   .persos .choose_perso li.choose_perso_orange {
     background-color: #da5a00;
   }
-  /* line 1092, ../sass/main.scss */
+  /* line 1096, ../sass/main.scss */
   .persos h2 {
     display: none;
   }
-  /* line 1097, ../sass/main.scss */
+  /* line 1101, ../sass/main.scss */
   .persos .bg.bg_perso {
     position: absolute;
     height: 382px;
@@ -1175,48 +1180,48 @@ footer .socials li i {
     display: none;
     margin-top: 20px;
   }
-  /* line 1106, ../sass/main.scss */
+  /* line 1110, ../sass/main.scss */
   .persos .bg.bg_perso .tastes .like, .persos .bg.bg_perso .tastes .dislike {
     position: relative;
     top: -100px;
     left: 20px;
   }
-  /* line 1111, ../sass/main.scss */
+  /* line 1115, ../sass/main.scss */
   .persos .bg.bg_perso .tastes .like li, .persos .bg.bg_perso .tastes .dislike li {
     margin-bottom: 5px;
   }
-  /* line 1117, ../sass/main.scss */
+  /* line 1121, ../sass/main.scss */
   .persos .bg.bg_perso .bg_picture {
     left: 0;
     margin-top: 30px;
   }
-  /* line 1121, ../sass/main.scss */
+  /* line 1125, ../sass/main.scss */
   .persos .bg.bg_perso .bg_picture img {
     height: 300px;
   }
-  /* line 1125, ../sass/main.scss */
+  /* line 1129, ../sass/main.scss */
   .persos .bg.bg_perso .text_perso {
     left: 30px;
     text-align: left;
     width: 550px;
   }
-  /* line 1131, ../sass/main.scss */
+  /* line 1135, ../sass/main.scss */
   .persos .bg.bg_perso.bg_blue {
     display: block;
   }
-  /* line 1133, ../sass/main.scss */
+  /* line 1137, ../sass/main.scss */
   .persos .bg.bg_perso.bg_blue h3 {
     color: #4a6398;
   }
-  /* line 1138, ../sass/main.scss */
+  /* line 1142, ../sass/main.scss */
   .persos .bg.bg_perso.bg_red h3 {
     color: #c50a36;
   }
-  /* line 1143, ../sass/main.scss */
+  /* line 1147, ../sass/main.scss */
   .persos .bg.bg_perso.bg_green h3 {
     color: #1fb22c;
   }
-  /* line 1148, ../sass/main.scss */
+  /* line 1152, ../sass/main.scss */
   .persos .bg.bg_perso.bg_orange h3 {
     color: #da5a00;
   }
@@ -1224,7 +1229,7 @@ footer .socials li i {
   /*
   *	BLINDTEST
   */
-  /* line 1163, ../sass/main.scss */
+  /* line 1167, ../sass/main.scss */
   .block_blindtest li button:hover {
     font-size: 1.625em;
   }
@@ -1232,17 +1237,17 @@ footer .socials li i {
   /*
   *	GALLERY
   */
-  /* line 1175, ../sass/main.scss */
+  /* line 1179, ../sass/main.scss */
   .body_gallery #container {
     max-width: 90%;
   }
 
-  /* line 1180, ../sass/main.scss */
+  /* line 1184, ../sass/main.scss */
   .gallery li {
     width: 500px;
     z-index: 0;
   }
-  /* line 1184, ../sass/main.scss */
+  /* line 1188, ../sass/main.scss */
   .gallery li img {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
@@ -1254,7 +1259,7 @@ footer .socials li i {
     transition: all 0.2s ease;
     position: relative;
   }
-  /* line 1189, ../sass/main.scss */
+  /* line 1193, ../sass/main.scss */
   .gallery li img:hover {
     -moz-transform: scale(1.02, 1.02);
     -ms-transform: scale(1.02, 1.02);
@@ -1266,14 +1271,14 @@ footer .socials li i {
     z-index: 1;
   }
 
-  /* line 1197, ../sass/main.scss */
+  /* line 1201, ../sass/main.scss */
   .div_select_gallery {
     display: inline-block;
     vertical-align: top;
     width: auto;
     margin: 50px 0 50px 73px;
   }
-  /* line 1203, ../sass/main.scss */
+  /* line 1207, ../sass/main.scss */
   .div_select_gallery label, .div_select_gallery select {
     width: auto;
     outline: none;
@@ -1282,16 +1287,16 @@ footer .socials li i {
   /*
   *	CONTACT
   */
-  /* line 1215, ../sass/main.scss */
+  /* line 1219, ../sass/main.scss */
   form {
     width: 800px;
   }
-  /* line 1219, ../sass/main.scss */
+  /* line 1223, ../sass/main.scss */
   form .style_input input[type=text], form .style_input textarea {
     width: 800px;
   }
 
-  /* line 1225, ../sass/main.scss */
+  /* line 1229, ../sass/main.scss */
   .div_letter {
     width: 800px;
   }
@@ -1299,23 +1304,23 @@ footer .socials li i {
   /*
   *	CALENDAR
   */
-  /* line 1233, ../sass/main.scss */
+  /* line 1237, ../sass/main.scss */
   #miniatures {
     width: 940px;
     margin: 0 auto;
   }
 
-  /* line 1238, ../sass/main.scss */
+  /* line 1242, ../sass/main.scss */
   .date:nth-child(4n+0) {
     margin-right: 42px;
   }
 
-  /* line 1242, ../sass/main.scss */
+  /* line 1246, ../sass/main.scss */
   .date_m {
     display: none;
   }
 
-  /* line 1247, ../sass/main.scss */
+  /* line 1251, ../sass/main.scss */
   .date {
     display: inline-block;
   }
@@ -1323,15 +1328,15 @@ footer .socials li i {
   /*
   *	FOOTER
   */
-  /* line 1257, ../sass/main.scss */
+  /* line 1261, ../sass/main.scss */
   footer a:hover {
     text-decoration: underline;
   }
-  /* line 1265, ../sass/main.scss */
+  /* line 1269, ../sass/main.scss */
   footer .socials li a:hover.twitter {
     color: #4099FF;
   }
-  /* line 1268, ../sass/main.scss */
+  /* line 1272, ../sass/main.scss */
   footer .socials li a:hover.facebook {
     color: #3B5998;
   }
