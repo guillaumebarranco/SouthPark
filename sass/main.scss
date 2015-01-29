@@ -30,7 +30,7 @@ h1, h2, h3 {
 	color: #000;
 }
 
-h1 {
+h1 h2 {
 	line-height: 1.5em;
 }
 
@@ -157,7 +157,8 @@ $browser-context: 16; // Default
 #container {
 	h1 {
 		text-align: center;
-		margin-top: 20px;
+		margin-top: 40px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -322,6 +323,8 @@ a {
 
 	&.bg_yellow {
 		background-color: $yellow;
+		margin-top: 50px;
+		margin-bottom: 30px;
 
 		.yellow_picture {
 			float: left;
@@ -636,7 +639,7 @@ img.btn_close {
 		color: #fff;
 		background: $green_arrow;
 		@include box-sizing(border-box);
-		padding: 20px;
+		padding: 23px;
 		width: 100%;
 		font-family: 'South Park';
 		margin-top: -4px;
@@ -893,7 +896,7 @@ footer {
 
 @media screen and(min-width: 1024px) {
 
-	h1 {
+	h1 h2 {
 	line-height: 1;
 	}
 
