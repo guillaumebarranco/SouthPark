@@ -1267,21 +1267,22 @@ footer .socials li i {
   /* line 1195, ../sass/main.scss */
   .div_select_gallery label, .div_select_gallery select {
     width: auto;
+    outline: none;
   }
 
   /*
   *	CONTACT
   */
-  /* line 1206, ../sass/main.scss */
+  /* line 1207, ../sass/main.scss */
   form {
     width: 800px;
   }
-  /* line 1210, ../sass/main.scss */
+  /* line 1211, ../sass/main.scss */
   form .style_input input[type=text], form .style_input textarea {
     width: 800px;
   }
 
-  /* line 1216, ../sass/main.scss */
+  /* line 1217, ../sass/main.scss */
   .div_letter {
     width: 800px;
   }
@@ -1289,23 +1290,23 @@ footer .socials li i {
   /*
   *	CALENDAR
   */
-  /* line 1224, ../sass/main.scss */
+  /* line 1225, ../sass/main.scss */
   #miniatures {
     width: 940px;
     margin: 0 auto;
   }
 
-  /* line 1229, ../sass/main.scss */
+  /* line 1230, ../sass/main.scss */
   .date:nth-child(4n+0) {
     margin-right: 42px;
   }
 
-  /* line 1233, ../sass/main.scss */
+  /* line 1234, ../sass/main.scss */
   .date_m {
     display: none;
   }
 
-  /* line 1238, ../sass/main.scss */
+  /* line 1239, ../sass/main.scss */
   .date {
     display: inline-block;
   }
@@ -1313,15 +1314,15 @@ footer .socials li i {
   /*
   *	FOOTER
   */
-  /* line 1248, ../sass/main.scss */
+  /* line 1249, ../sass/main.scss */
   footer a:hover {
     text-decoration: underline;
   }
-  /* line 1256, ../sass/main.scss */
+  /* line 1257, ../sass/main.scss */
   footer .socials li a:hover.twitter {
     color: #4099FF;
   }
-  /* line 1259, ../sass/main.scss */
+  /* line 1260, ../sass/main.scss */
   footer .socials li a:hover.facebook {
     color: #3B5998;
   }
