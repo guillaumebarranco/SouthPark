@@ -30,6 +30,10 @@ h1, h2, h3 {
 	color: #000;
 }
 
+p {
+	line-height: 1.5em;
+}
+
 h2 {
 	line-height: em(25);
 }
@@ -1103,6 +1107,10 @@ footer {
 						position: relative;
 						top: -100px;
 						left: 20px;
+
+						li{
+							margin-bottom: 5px;
+						}
 					}
 				}
 
