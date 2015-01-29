@@ -75,7 +75,7 @@
 					<form action="#" method="post">
 						<div class="style_input">
 							<label for="name">Nom <span class="asterix">*</span></label>
-							<input type="text" id="name" name="name" />
+							<input type="text" id="name" name="name" required/>
 						</div>
 						<div class="style_input">
 							<label for="secret">Identité secrète</label>
@@ -83,15 +83,15 @@
 						</div>
 						<div class="style_input">
 							<label for="text">Message <span class="asterix">*</span></label>
-							<textarea id="text" name="text"></textarea>
+							<textarea id="text" name="text" required></textarea>
 						</div>
 						<div class="style_input style_radio" style="position: relative;">
 							<div class="coon">
 								<img src="" width="200" alt="" />
 							</div>
 							<label for="member">Acceptez-vous d'être membre du Coon et sa bande ? <span class="asterix">*</span></label>
-							<input type="radio" value="1" name="member" /> Oui
-							<input type="radio" value="0" name="member" /> Non
+							<input type="radio" value="1" name="member" required/> Oui
+							<input type="radio" value="0" name="member" required/> Non
 						</div>
 
 						<div class="style_input">
