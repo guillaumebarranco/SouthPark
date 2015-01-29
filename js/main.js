@@ -44,8 +44,10 @@ $(document).ready(function() {
 	}
 
 	$(window).resize(function() {
-		if($('#home').length !== 0 && $(window).width() < 1000) {
-			$('.device').height(($(window).width() / ratio)+50);
+		if($('#home').length !== 0) 
+			if($(window).width() < 1000) {
+				$('.device').height(($(window).width() / ratio)+50);
+			}			
 		}
 	});
 
@@ -70,6 +72,8 @@ $(document).ready(function() {
 
 		$('.bg_'+color).show();
 	});
+
+
 
 
 	/*
