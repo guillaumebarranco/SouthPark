@@ -6,6 +6,8 @@ $(document).ready(function() {
 
 	var extended = 0;
 	var ratio = 1920/1080;
+	var color;
+	var border;
 
 	$('.traits').off('click');
 	$('.traits').on('click', function() {
@@ -46,12 +48,22 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		if($('#home').length !== 0 && $(window).width() < 1000) {
 			$('.device').height(($(window).width() / ratio)+50);
+			$('.bg_perso').show();
+		} else if($('#home').length !== 0 && $(window).width() > 1000) {
+			$('.device').height(600);
+			if(color !== null && color !== undefined) {
+				$('.bg_perso').hide();
+
+				$('.persos').css('border-color', border);
+				$('.choose_perso li').css('border-color', border);
+
+				$('.bg_'+color).show()
+			}
 		}
 	});
 
 	$('.choose_perso li').click(function() {
-		var color = $(this).attr('data-color');
-		var border;
+		color = $(this).attr('data-color');
 
 		if(color === 'blue') {
 			border = '#4a6398';
@@ -71,7 +83,7 @@ $(document).ready(function() {
 		$('.bg_'+color).show();
 	});
 
-	
+
 
 
 	/*
